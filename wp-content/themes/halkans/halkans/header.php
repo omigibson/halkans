@@ -43,6 +43,7 @@
 				<p class="site-description"><?php echo $halkans_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php the_header_image_tag(); ?></a>
 
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'halkans' ); ?></button>

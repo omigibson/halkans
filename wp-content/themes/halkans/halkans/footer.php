@@ -14,19 +14,26 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'halkans' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'halkans' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'halkans' ), 'halkans', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
+			<p>
+				At your service: <br/>
+				Jan "Halkan" Hallquisth, Stevie Klasson <br/>
+				William Hallquisth, Jerzy Szledakowski
+			</p>
+			<p>
+				Contact: <br/>
+				Phone: +46-8-641 49 70 <br/>
+				Email: halkan@spray.se
+			</p>
+			<p>
+				Weekdays 11 - 06 pm <br/>
+				Saturday 11 - 04 pm <br/>
+				Sunday Closed
+			</p>
+			<p>
+				Noe Arksgranden 2 <br/>
+				118 26 Stockholm <br/>
+				Sweden
+			</p>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
