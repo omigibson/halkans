@@ -8,7 +8,7 @@
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-	return;
+	echo do_shortcode('[searchandfilter fields="post_tag" types="checkbox" submit_label="Filter" headings="Brands", "Price", "Vintage"]');
 }
 ?>
 
