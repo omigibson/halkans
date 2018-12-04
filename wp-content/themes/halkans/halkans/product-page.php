@@ -1,7 +1,10 @@
 <?php
-/*
- * Template Name: Product Page
- * description: Template for all type of instrument and amp pages
+/**
+ * The template for displaying archive pages
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package Halkans
  */
 
 get_header();
@@ -10,38 +13,45 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
-			?>
+		<?php if ( have_posts() ) : ?>
 
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<header class="entry-header">
-					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-				</header><!-- .entry-header -->
+			<header class="page-header">
+				<?php
+				the_archive_title( '<h1 class="page-title">', '</h1>' );
+				the_archive_description( '<div class="archive-description">', '</div>' );
+				?>
+			</header><!-- .page-header -->
 
-				<?php halkans_post_thumbnail(); ?>
+			<?php
 
-				<div class="entry-content">
-					<?php
-					the_content();
+			/* Start the Loop */
+			$args = [
+    'post_type'      => 'instrument',
+    'posts_per_page' => 10,
+];
+$loop = new WP_Query($args);
+while ($loop->have_posts()) {
+    $loop->the_post();
+    ?>
+    <div class="entry-content">
+        <?php the_title(); ?>
+        <?php the_content(); ?>
+    </div>
+    <?php
+}
 
-					wp_link_pages( array(
-						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'halkans' ),
-						'after'  => '</div>',
-					) );
-					?>
-				</div><!-- .entry-content -->
-			</article><!-- #post-<?php the_ID(); ?> -->
+			the_posts_navigation();
 
-		<?php
-			endwhile; // End of the loop.
+		else :
+
+			get_template_part( 'template-parts/content', 'none' );
+
+		endif;
 		?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
-//REMOVE SIDEBAR
 get_sidebar();
 get_footer();
