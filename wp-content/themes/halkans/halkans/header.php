@@ -54,6 +54,15 @@
 			) );
 			?>
 		</nav><!-- #site-navigation -->
+		<nav class="main-navigation">
+			<button class="menu-toggle" aria-expanded="false"><?php esc_html_e( 'Secondary Menu', 'halkans' ); ?></button>
+			<?php
+				wp_nav_menu( array(
+					'theme_location' => 'secondary',
+					'menu_class' => 'secondary',
+					) );
+				?>
+		</nav>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

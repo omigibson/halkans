@@ -39,8 +39,51 @@
       'show_tagcloud'              => false,
       'capabilities'               => $capabilities,
     );
-    register_taxonomy( 'brand', array( 'instrument' ), $args );
+    register_taxonomy( 'brand', array( 'instrument', 'ampsspeakers', 'partsaccessories' ), $args );
 
   }
   add_action( 'init', 'create_brand_taxonomy', 0 );
+
+  if ( ! function_exists( 'create_year_taxonomy' ) ) {
+
+// Register Custom Taxonomy
+function create_year_taxonomy() {
+
+	$labels = array(
+		'name'                       => _x( 'Year', 'Taxonomy General Name', 'text_domain' ),
+		'singular_name'              => _x( 'Year', 'Taxonomy Singular Name', 'text_domain' ),
+		'menu_name'                  => __( 'Year', 'text_domain' ),
+		'all_items'                  => __( 'All Years', 'text_domain' ),
+		'parent_item'                => __( 'Parent Item', 'text_domain' ),
+		'parent_item_colon'          => __( 'Parent Item:', 'text_domain' ),
+		'new_item_name'              => __( 'New Item Name', 'text_domain' ),
+		'add_new_item'               => __( 'Add New Item', 'text_domain' ),
+		'edit_item'                  => __( 'Edit Year', 'text_domain' ),
+		'update_item'                => __( 'Update Year', 'text_domain' ),
+		'view_item'                  => __( 'View Year', 'text_domain' ),
+		'separate_items_with_commas' => __( '', 'text_domain' ),
+		'add_or_remove_items'        => __( 'Add or remove year', 'text_domain' ),
+		'choose_from_most_used'      => __( '', 'text_domain' ),
+		'popular_items'              => __( 'Popular Items', 'text_domain' ),
+		'search_items'               => __( 'Search Years', 'text_domain' ),
+		'not_found'                  => __( 'Not Found', 'text_domain' ),
+		'no_terms'                   => __( 'No items', 'text_domain' ),
+		'items_list'                 => __( 'Items list', 'text_domain' ),
+		'items_list_navigation'      => __( 'Items list navigation', 'text_domain' ),
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => false,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => false,
+		'show_tagcloud'              => false,
+	);
+	register_taxonomy( 'year', array( 'instrument', 'ampsspeakers', 'partsaccessories' ), $args );
+
+}
+add_action( 'init', 'create_year_taxonomy', 0 );
+
+}
 ?>

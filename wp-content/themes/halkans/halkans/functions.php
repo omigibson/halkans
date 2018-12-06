@@ -42,9 +42,10 @@ if ( ! function_exists( 'halkans_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
-		// This theme uses wp_nav_menu() in one location.
+		// This theme uses wp_nav_menu() in one location by default. The secondary was added later on.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'halkans' ),
+			'secondary' =>esc_html__( 'Secondary Menu', 'halkans' ),
 		) );
 
 		/*
@@ -166,7 +167,7 @@ function create_instrument_post_type() {
 		'description'           => __( 'Post type for all kinds of instruments', 'text_domain' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
-		'taxonomies'            => array( 'category', 'brand', 'year', ' date' ),
+		'taxonomies'            => array( 'category', 'brand', 'year' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -185,7 +186,141 @@ function create_instrument_post_type() {
 }
 add_action( 'init', 'create_instrument_post_type', 0 );
 
+if ( ! function_exists('create_amp_post_type') ) {
+
+// Register Custom Post Type
+function create_amp_post_type() {
+
+	$labels = array(
+		'name'                  => _x( 'Amps & Speakers', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Amps & Speakers', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Amps & Speakers', 'text_domain' ),
+		'name_admin_bar'        => __( 'Amps & Speakers', 'text_domain' ),
+		'archives'              => __( 'Amps & Speakers Archives', 'text_domain' ),
+		'attributes'            => __( 'Amps & Speakers Attributes', 'text_domain' ),
+		'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),
+		'all_items'             => __( 'All Items', 'text_domain' ),
+		'add_new_item'          => __( 'Add New Item', 'text_domain' ),
+		'add_new'               => __( 'Add New', 'text_domain' ),
+		'new_item'              => __( 'New Item', 'text_domain' ),
+		'edit_item'             => __( 'Edit Item', 'text_domain' ),
+		'update_item'           => __( 'Update Item', 'text_domain' ),
+		'view_item'             => __( 'View Item', 'text_domain' ),
+		'view_items'            => __( 'View Items', 'text_domain' ),
+		'search_items'          => __( 'Search Item', 'text_domain' ),
+		'not_found'             => __( 'Not found', 'text_domain' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
+		'featured_image'        => __( 'Featured Image', 'text_domain' ),
+		'set_featured_image'    => __( 'Set featured image', 'text_domain' ),
+		'remove_featured_image' => __( 'Remove featured image', 'text_domain' ),
+		'use_featured_image'    => __( 'Use as featured image', 'text_domain' ),
+		'insert_into_item'      => __( 'Insert into item', 'text_domain' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this item', 'text_domain' ),
+		'items_list'            => __( 'Items list', 'text_domain' ),
+		'items_list_navigation' => __( 'Items list navigation', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter items list', 'text_domain' ),
+	);
+	$args = array(
+		'label'                 => __( 'Amps & Speakers', 'text_domain' ),
+		'description'           => __( 'Post Type Description', 'text_domain' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'custom-fields' ),
+		'taxonomies'            => array( 'brand', 'year' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'Amps & Speakers', $args );
+
+}
+add_action( 'init', 'create_amp_post_type', 0 );
+
+}
+
+if ( ! function_exists('create_accessory_post_type') ) {
+
+// Register Custom Post Type
+function create_accessory_post_type() {
+
+	$labels = array(
+		'name'                  => _x( 'Parts & Accessories', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Parts & Accessories', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Parts & Accessories', 'text_domain' ),
+		'name_admin_bar'        => __( 'Post Parts & Accessories', 'text_domain' ),
+		'archives'              => __( 'Parts & AccessoriesArchives', 'text_domain' ),
+		'attributes'            => __( 'Parts & Accessories Attributes', 'text_domain' ),
+		'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),
+		'all_items'             => __( 'All Items', 'text_domain' ),
+		'add_new_item'          => __( 'Add New Item', 'text_domain' ),
+		'add_new'               => __( 'Add New', 'text_domain' ),
+		'new_item'              => __( 'New Item', 'text_domain' ),
+		'edit_item'             => __( 'Edit Item', 'text_domain' ),
+		'update_item'           => __( 'Update Item', 'text_domain' ),
+		'view_item'             => __( 'View Item', 'text_domain' ),
+		'view_items'            => __( 'View Items', 'text_domain' ),
+		'search_items'          => __( 'Search Item', 'text_domain' ),
+		'not_found'             => __( 'Not found', 'text_domain' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
+		'featured_image'        => __( 'Featured Image', 'text_domain' ),
+		'set_featured_image'    => __( 'Set featured image', 'text_domain' ),
+		'remove_featured_image' => __( 'Remove featured image', 'text_domain' ),
+		'use_featured_image'    => __( 'Use as featured image', 'text_domain' ),
+		'insert_into_item'      => __( 'Insert into item', 'text_domain' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this item', 'text_domain' ),
+		'items_list'            => __( 'Parts & Accessories list', 'text_domain' ),
+		'items_list_navigation' => __( 'Parts & Accessories list navigation', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter Parts & Accessories list', 'text_domain' ),
+	);
+	$args = array(
+		'label'                 => __( 'Parts & Accessories', 'text_domain' ),
+		'description'           => __( 'Post Type Description', 'text_domain' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor' ),
+		'taxonomies'            => array( 'brand', ' year' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'Parts & Accessories', $args );
+
+}
+add_action( 'init', 'create_accessory_post_type', 0 );
+
+}
+
 include( get_template_directory() . '/inc/custom-taxonomies.php' );
+
+add_filter('pre_get_posts', 'query_post_type');
+function query_post_type($query) {
+  if( is_category() ) {
+    $post_type = get_query_var('post_type');
+    if($post_type)
+        $post_type = $post_type;
+    else
+        $post_type = array('nav_menu_item', 'post', 'instrument'); // don't forget nav_menu_item to allow menus to work!
+    $query->set('post_type',$post_type);
+    return $query;
+    }
+}
+
 /**
  * Implement the Custom Header feature.
  */
