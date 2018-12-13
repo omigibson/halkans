@@ -19,17 +19,19 @@
  			<?php
 
  			/* Start the Loop */
- 			$args = [
-     'post_type'      => 'instrument',
+      $args = [
+     'post_type'      => get_query_var('pagename'),
      'posts_per_page' => 10,
  		];
+
  		$loop = new WP_Query($args);
  		while ($loop->have_posts()) {
  		    $loop->the_post();
  		    ?>
  		    <div class="entry-content">
- 		        <?php the_title(); ?>
- 		        <?php the_content(); ?>
+ 		        <h2><?php the_title(); ?></h2>
+            <h3><?php the_field('Price'); ?></h3>
+ 		        <p><?php the_content(); ?></p>
  		    </div>
  		    <?php
  		}

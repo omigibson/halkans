@@ -6,10 +6,10 @@ jQuery(function($){
 			data:filter.serialize(), // form data
 			type:filter.attr('method'), // POST
 			beforeSend:function(xhr){
-				filter.find('button').text('Processing...'); // changing the button label
+				filter.find('p').text('Processing...'); // changing the button label
 			},
 			success:function(data){
-				filter.find('button').text('Apply filter'); // changing the button label back
+				filter.find('p').text('Apply filter'); // changing the button label back
 				$('#main').html(data); // insert data
 			}
 		});

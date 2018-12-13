@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.0.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-12-05 12:33:48+0000\n"
+"PO-Revision-Date: 2018-12-10 13:41:04+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -7772,73 +7772,73 @@ msgstr "Term-meta kan inte läggas till termer som är delade mellan taxonomier.
 #: wp-includes/class-wp-locale.php:181
 msgctxt "genitive"
 msgid "December"
-msgstr "December"
+msgstr "december"
 
 #. translators: month name, genitive
 #: wp-includes/class-wp-locale.php:180
 msgctxt "genitive"
 msgid "November"
-msgstr "November"
+msgstr "november"
 
 #. translators: month name, genitive
 #: wp-includes/class-wp-locale.php:179
 msgctxt "genitive"
 msgid "October"
-msgstr "Oktober"
+msgstr "oktober"
 
 #. translators: month name, genitive
 #: wp-includes/class-wp-locale.php:178
 msgctxt "genitive"
 msgid "September"
-msgstr "September"
+msgstr "september"
 
 #. translators: month name, genitive
 #: wp-includes/class-wp-locale.php:177
 msgctxt "genitive"
 msgid "August"
-msgstr "Augusti"
+msgstr "augusti"
 
 #. translators: month name, genitive
 #: wp-includes/class-wp-locale.php:176
 msgctxt "genitive"
 msgid "July"
-msgstr "Juli"
+msgstr "juli"
 
 #. translators: month name, genitive
 #: wp-includes/class-wp-locale.php:175
 msgctxt "genitive"
 msgid "June"
-msgstr "Juni"
+msgstr "juni"
 
 #. translators: month name, genitive
 #: wp-includes/class-wp-locale.php:174
 msgctxt "genitive"
 msgid "May"
-msgstr "Maj"
+msgstr "maj"
 
 #. translators: month name, genitive
 #: wp-includes/class-wp-locale.php:173
 msgctxt "genitive"
 msgid "April"
-msgstr "April"
+msgstr "april"
 
 #. translators: month name, genitive
 #: wp-includes/class-wp-locale.php:172
 msgctxt "genitive"
 msgid "March"
-msgstr "Mars"
+msgstr "mars"
 
 #. translators: month name, genitive
 #: wp-includes/class-wp-locale.php:171
 msgctxt "genitive"
 msgid "February"
-msgstr "Februari"
+msgstr "februari"
 
 #. translators: month name, genitive
 #: wp-includes/class-wp-locale.php:170
 msgctxt "genitive"
 msgid "January"
-msgstr "Januari"
+msgstr "januari"
 
 #. translators: If months in your language require a genitive case, * translate
 #. this to 'on'. Do not translate into your own language.
@@ -8169,61 +8169,61 @@ msgstr "Nov"
 #: wp-includes/class-wp-locale.php:193
 msgctxt "October abbreviation"
 msgid "Oct"
-msgstr "Okt"
+msgstr "okt"
 
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:192
 msgctxt "September abbreviation"
 msgid "Sep"
-msgstr "Sep"
+msgstr "sep"
 
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:191
 msgctxt "August abbreviation"
 msgid "Aug"
-msgstr "Aug"
+msgstr "aug"
 
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:190
 msgctxt "July abbreviation"
 msgid "Jul"
-msgstr "Jul"
+msgstr "jul"
 
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:189
 msgctxt "June abbreviation"
 msgid "Jun"
-msgstr "Jun"
+msgstr "jun"
 
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:188
 msgctxt "May abbreviation"
 msgid "May"
-msgstr "Maj"
+msgstr "maj"
 
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:187
 msgctxt "April abbreviation"
 msgid "Apr"
-msgstr "Apr"
+msgstr "apr"
 
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:186
 msgctxt "March abbreviation"
 msgid "Mar"
-msgstr "Mar"
+msgstr "mar"
 
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:185
 msgctxt "February abbreviation"
 msgid "Feb"
-msgstr "Feb"
+msgstr "feb"
 
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:184
 msgctxt "January abbreviation"
 msgid "Jan"
-msgstr "Jan"
+msgstr "jan"
 
 #. translators: one-letter abbreviation of the weekday
 #: wp-includes/class-wp-locale.php:144

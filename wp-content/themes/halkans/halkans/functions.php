@@ -143,35 +143,132 @@ function filter_script() {
 }
 add_action( 'wp_enqueue_scripts', 'filter_script' );
 
-//PHP code to process filter request
+//Custom filter
 function filter_function(){
 	$args = array(
 		'orderby' => 'date', // we will sort posts by date
-		'order'	=> $_POST['date'] // ASC or DESC
+		'order'	=> $_POST['date'], // ASC or DESC
+		'post_type' => $_POST['post_type'],
 	);
 
-	// for taxonomies / categories
-	if( isset( $_POST['categoryfilter'] ) )
-		$args['tax_query'] = array(
-			array(
-				'taxonomy' => 'brand',
-				'field' => 'id',
-				'terms' => $_POST['categoryfilter']
-			)
-		);
+	//Check for different combinations of checked checkboxes
+		if( isset( $_POST['brand'] ) && isset( $_POST['price'] ) && isset( $_POST['year'] ) ):
+			$args['tax_query'] = array(
+				'relation' => 'AND',
+				array(
+					'taxonomy' => 'brand',
+					'field' => 'id',
+					'terms' => $_POST['brand']
+				),
+				array(
+					'taxonomy' => 'price_group',
+					'field' => 'id',
+					'terms' => $_POST['price']
+				),
+				array(
+					'taxonomy' => 'year_made',
+					'field' => 'id',
+					'terms' => $_POST['year']
+				)
+			);
+		elseif ( isset( $_POST['brand'] ) && isset( $_POST['price'] ) ):
+			$args['tax_query'] = array(
+				'relation' => 'AND',
+				array(
+					'taxonomy' => 'brand',
+					'field' => 'id',
+					'terms' => $_POST['brand']
+				),
+				array(
+					'taxonomy' => 'price_group',
+					'field' => 'id',
+					'terms' => $_POST['price']
+				),
+			);
+		elseif ( isset( $_POST['brand'] ) && isset( $_POST['year'] ) ):
+			$args['tax_query'] = array(
+				'relation' => 'AND',
+				array(
+					'taxonomy' => 'brand',
+					'field' => 'id',
+					'terms' => $_POST['brand']
+				),
+				array(
+					'taxonomy' => 'year_made',
+					'field' => 'id',
+					'terms' => $_POST['year']
+				)
+			);
+		elseif ( isset( $_POST['price'] ) && isset( $_POST['year'] ) ):
+			$args['tax_query'] = array(
+				'relation' => 'AND',
+				array(
+					'taxonomy' => 'price_group',
+					'field' => 'id',
+					'terms' => $_POST['price']
+				),
+				array(
+					'taxonomy' => 'year_made',
+					'field' => 'id',
+					'terms' => $_POST['year']
+				)
+			);
+		elseif ( isset( $_POST['brand'] ) || isset( $_POST['price'] ) ):
+				$args['tax_query'] = array(
+					'relation' => 'OR',
+					array(
+						'taxonomy' => 'brand',
+						'field' => 'id',
+						'terms' => $_POST['brand']
+					),
+					array(
+						'taxonomy' => 'price_group',
+						'field' => 'id',
+						'terms' => $_POST['price']
+					)
+				);
+			elseif ( isset( $_POST['brand'] ) || isset( $_POST['year'] ) ):
+					$args['tax_query'] = array(
+						'relation' => 'OR',
+						array(
+							'taxonomy' => 'brand',
+							'field' => 'id',
+							'terms' => $_POST['brand']
+						),
+						array(
+							'taxonomy' => 'year_made',
+							'field' => 'id',
+							'terms' => $_POST['year']
+						)
+					);
+			elseif ( isset( $_POST['year'] ) || isset( $_POST['price'] ) ):
+					$args['tax_query'] = array(
+						'relation' => 'OR',
+						array(
+							'taxonomy' => 'year_made',
+							'field' => 'id',
+							'terms' => $_POST['year']
+						),
+						array(
+							'taxonomy' => 'price_group',
+							'field' => 'id',
+							'terms' => $_POST['price']
+						)
+					);
+		endif;
 
-	$query = new WP_Query( $args );
+		$query = new WP_Query( $args );
 
-	if( $query->have_posts() ) :
-		while( $query->have_posts() ): $query->the_post();
-			echo '<h2>' . $query->post->post_title . '</h2>';
-			echo '<p>' . $query->post->post_content . '</p>';
-		endwhile;
-		wp_reset_postdata();
-	else :
-		echo 'No posts found';
-	endif;
-
+	//Loop through and echo out the result of the query
+		if( $query->have_posts() ) :
+			while( $query->have_posts() ): $query->the_post();
+				echo '<h2>' . $query->post->post_title . '</h2>';
+				echo '<p>' . $query->post->post_content . '</p>';
+			endwhile;
+			wp_reset_postdata();
+		else :
+			echo 'No posts found';
+		endif;
 	die();
 }
 
