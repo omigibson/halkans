@@ -1,3 +1,31 @@
+@font-face {
+    font-family: 'Brush Script';
+    src: url(http://localhost/halkans/wp-content/themes/halkans/halkans/fonts/BRSHSCRP.ttf);
+    font-weight: normal;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+}
+
+h1, h2 {
+	font-family: 'Playfair Display', serif;
+	color: $brand__blue;
+}
+
+.logo {
+	font-family: 'Brush Script', sans-serif;
+	text-shadow: 5px 5px 5px #696969;
+		margin: 0;
+}
+
+h1.logo {
+	font-size: 5rem;
+	line-height: 1;
+}
+
+p.logo {
+	font-size: 1.8rem;
+	color: $brand__blue;
+	margin-top: -10px;
 }

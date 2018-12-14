@@ -1,16 +1,15 @@
 <?php
 /**
- * The sidebar containing the main widget area
+ * The sidebar containing product filters
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package Halkans
  */
 
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 	$post_type = get_query_var('pagename');
 ?>
-<aside class="widget-area">
+<aside id="secondary" class="widget-area">
 	<form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="filter">
 		<h3>Brands</h3>
 		<?php
@@ -56,9 +55,3 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 		<input type="hidden" name="action" value="myfilter">
 	</form>
 </aside>
-<?php }
-?>
-
-<aside id="secondary" class="widget-area">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
-</aside><!-- #secondary -->

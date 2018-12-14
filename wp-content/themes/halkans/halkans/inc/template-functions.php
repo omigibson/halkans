@@ -17,10 +17,10 @@ function halkans_body_classes( $classes ) {
 		$classes[] = 'hfeed';
 	}
 
-	// // Adds a class of no-sidebar when there is no sidebar present.
-	// if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-	// 	$classes[] = 'no-sidebar';
-	// }
+	//Remove sidebar
+	if ( is_front_page() ) {
+		$classes[] = 'no-sidebar';
+	}
 
 	return $classes;
 }

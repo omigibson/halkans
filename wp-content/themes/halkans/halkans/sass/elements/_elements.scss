@@ -31,3 +31,21 @@ figure {
 }
 
 @import "tables";
+
+#masthead {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+
+	.logo-link img {
+		margin: 2rem;
+	}
+
+	.logo-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 2.5rem 0;
+	}
+}
