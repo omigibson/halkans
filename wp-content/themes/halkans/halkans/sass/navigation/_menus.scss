@@ -6,11 +6,11 @@
 	padding: 0.5rem 3rem;
 
 	#primary-menu {
-		padding-bottom: 5px;
+		padding-bottom: 8px;
 	}
 
 	#menu-undermeny {
-		padding-top: 5px;
+		padding-top: 8px;
 		margin: 0 auto;
 		border-top: 1px solid #d3d3d3;
 	}
@@ -28,6 +28,9 @@
 			top: 100%;
 			left: -999em;
 			z-index: 99999;
+			background-color: black;
+			display: flex;
+			flex-direction: column;
 
 			ul {
 				left: -999em;
@@ -43,7 +46,9 @@
 
 			a {
 				width: 200px;
-			}
+				padding: 0 0.5rem;
+				margin: 0.5rem;
+		}
 
 			:hover > a,
 			.focus > a {

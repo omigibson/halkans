@@ -1,0 +1,22 @@
+/* line 1, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/header.scss */
+#masthead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+/* line 7, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/header.scss */
+#masthead .logo-link img {
+  margin: 2rem;
+}
+
+/* line 11, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/header.scss */
+#masthead .logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2.5rem 0;
+}
+
+/*# sourceMappingURL=../../site/header.map */

@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../sass/site/header.css",
+	"sources": [
+		"../sass/site/header.scss"
+	],
+	"sourcesContent": [
+		"#masthead {\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\talign-items: center;\r\n\tbackground-color: white;\r\n\r\n\t.logo-link img {\r\n\t\tmargin: 2rem;\r\n\t}\r\n\r\n\t.logo-container {\r\n\t\tdisplay: flex;\r\n\t\tflex-direction: column;\r\n\t\talign-items: center;\r\n\t\tmargin: 2.5rem 0;\r\n\t}\r\n}\r\n"
+	],
+	"mappings": ";AAAA,AAAA,SAAS,CAAC;EACT,OAAO,EAAE,IAAK;EACd,cAAc,EAAE,MAAO;EACvB,WAAW,EAAE,MAAO;EACpB,gBAAgB,EAAE,KAAM;CAYxB;;;AAhBD,AAMY,SANH,CAMR,UAAU,CAAC,GAAG,CAAC;EACd,MAAM,EAAE,IAAK;CACb;;;AARF,AAUC,SAVQ,CAUR,eAAe,CAAC;EACf,OAAO,EAAE,IAAK;EACd,cAAc,EAAE,MAAO;EACvB,WAAW,EAAE,MAAO;EACpB,MAAM,EAAE,QAAS;CACjB",
+	"names": []
+}

@@ -16,7 +16,7 @@ hr {
 	background-color: $color__background-hr;
 	border: 0;
 	height: 1px;
-	margin-bottom: 1.5em;
+	margin-bottom: 1.3rem;
 }
 
 @import "lists";
@@ -27,25 +27,7 @@ img {
 }
 
 figure {
-	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
+	margin: 0 0 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
 }
 
 @import "tables";
-
-#masthead {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: white;
-
-	.logo-link img {
-		margin: 2rem;
-	}
-
-	.logo-container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin: 2.5rem 0;
-	}
-}

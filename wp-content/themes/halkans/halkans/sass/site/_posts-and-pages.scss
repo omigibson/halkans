@@ -1,0 +1,24 @@
+.sticky {
+	display: block;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.entry-content p {
+	margin-top: 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.text-content {
+	width: 60%;
+	background-color: white;
+	padding: 1.5rem;
+	margin: 6rem auto 7rem;
+	box-shadow: 5px 5px 11px 5px rgba(168,168,168,0.75);
+}

@@ -213,7 +213,7 @@ function filter_function(){
 					'terms' => $_POST['year']
 				)
 			);
-		elseif ( isset( $_POST['brand'] ) || isset( $_POST['price'] ) ):
+		elseif ( isset( $_POST['brand'] ) || isset( $_POST['price'] ) || isset( $_POST['year'] ) ):
 				$args['tax_query'] = array(
 					'relation' => 'OR',
 					array(
@@ -227,34 +227,6 @@ function filter_function(){
 						'terms' => $_POST['price']
 					)
 				);
-			elseif ( isset( $_POST['brand'] ) || isset( $_POST['year'] ) ):
-					$args['tax_query'] = array(
-						'relation' => 'OR',
-						array(
-							'taxonomy' => 'brand',
-							'field' => 'id',
-							'terms' => $_POST['brand']
-						),
-						array(
-							'taxonomy' => 'year_made',
-							'field' => 'id',
-							'terms' => $_POST['year']
-						)
-					);
-			elseif ( isset( $_POST['year'] ) || isset( $_POST['price'] ) ):
-					$args['tax_query'] = array(
-						'relation' => 'OR',
-						array(
-							'taxonomy' => 'year_made',
-							'field' => 'id',
-							'terms' => $_POST['year']
-						),
-						array(
-							'taxonomy' => 'price_group',
-							'field' => 'id',
-							'terms' => $_POST['price']
-						)
-					);
 		endif;
 
 		$query = new WP_Query( $args );
