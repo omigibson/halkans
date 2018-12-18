@@ -13,7 +13,7 @@
       'edit_item'                  => __( 'Edit Brand', 'text_domain' ),
       'update_item'                => __( 'Update Brand', 'text_domain' ),
       'view_item'                  => __( 'View Brand', 'text_domain' ),
-      'separate_items_with_commas' => __( 'Separate brands with commas', 'text_domain' ),
+      'separate_items_with_commas' => __( '', 'text_domain' ),
       'add_or_remove_items'        => __( 'Add or remove brands', 'text_domain' ),
       'choose_from_most_used'      => __( 'Choose from the most used', 'text_domain' ),
       'popular_items'              => __( 'Popular Brands', 'text_domain' ),
@@ -87,45 +87,45 @@
 
   }
 
-  if ( ! function_exists( 'yrar_made_taxonomy' ) ) {
+  if ( ! function_exists( 'age_group_taxonomy' ) ) {
 
-// Register Custom Taxonomy
-function year_made_taxonomy() {
+  // Register Custom Taxonomy
+  function age_group_taxonomy() {
 
-	$labels = array(
-		'name'                       => _x( 'Year Made', 'Taxonomy General Name', 'text_domain' ),
-		'singular_name'              => _x( 'Year Made', 'Taxonomy Singular Name', 'text_domain' ),
-		'menu_name'                  => __( 'Year Made', 'text_domain' ),
-		'all_items'                  => __( 'All Items', 'text_domain' ),
-		'parent_item'                => __( 'Parent Item', 'text_domain' ),
-		'parent_item_colon'          => __( 'Parent Item:', 'text_domain' ),
-		'new_item_name'              => __( 'New Item Name', 'text_domain' ),
-		'add_new_item'               => __( 'Add New Year Made', 'text_domain' ),
-		'edit_item'                  => __( 'Edit Year Made', 'text_domain' ),
-		'update_item'                => __( 'Update Year Made', 'text_domain' ),
-		'view_item'                  => __( 'View Year Made', 'text_domain' ),
-		'separate_items_with_commas' => __( 'Write "1985 and before" or "After 1985"', 'text_domain' ),
-		'add_or_remove_items'        => __( 'Add or remove Year Made', 'text_domain' ),
-		'choose_from_most_used'      => __( '', 'text_domain' ),
-		'popular_items'              => __( '', 'text_domain' ),
-		'search_items'               => __( 'Search Year Made', 'text_domain' ),
-		'not_found'                  => __( 'Not Found', 'text_domain' ),
-		'no_terms'                   => __( 'No items', 'text_domain' ),
-		'items_list'                 => __( 'Year Made list', 'text_domain' ),
-		'items_list_navigation'      => __( 'Items Year Made navigation', 'text_domain' ),
-	);
-	$args = array(
-		'labels'                     => $labels,
-		'hierarchical'               => false,
-		'public'                     => true,
-		'show_ui'                    => true,
-		'show_admin_column'          => true,
-		'show_in_nav_menus'          => false,
-		'show_tagcloud'              => false,
-	);
-	register_taxonomy( 'year_made', array( 'electricguitars', 'basses', 'acoustic_steel', 'acoustic_nylon', 'other_instruments' ), $args );
+  	$labels = array(
+  		'name'                       => _x( 'Age Group', 'Taxonomy General Name', 'text_domain' ),
+  		'singular_name'              => _x( 'Age Group', 'Taxonomy Singular Name', 'text_domain' ),
+  		'menu_name'                  => __( 'Age Group', 'text_domain' ),
+  		'all_items'                  => __( 'All Age Groups', 'text_domain' ),
+  		'parent_item'                => __( 'Parent Item', 'text_domain' ),
+  		'parent_item_colon'          => __( 'Parent Item:', 'text_domain' ),
+  		'new_item_name'              => __( 'New Age Group Name', 'text_domain' ),
+  		'add_new_item'               => __( 'Add New Age Group', 'text_domain' ),
+  		'edit_item'                  => __( 'Edit Age Group', 'text_domain' ),
+  		'update_item'                => __( 'Update Age Group', 'text_domain' ),
+  		'view_item'                  => __( 'View Age Group', 'text_domain' ),
+  		'separate_items_with_commas' => __( 'Write "1985 and before" or "After 1985"', 'text_domain' ),
+  		'add_or_remove_items'        => __( 'Add or remove Age Group', 'text_domain' ),
+  		'choose_from_most_used'      => __( 'Choose from the most used', 'text_domain' ),
+  		'popular_items'              => __( 'Popular Items', 'text_domain' ),
+  		'search_items'               => __( 'Search Age Group', 'text_domain' ),
+  		'not_found'                  => __( 'Not Found', 'text_domain' ),
+  		'no_terms'                   => __( 'No items', 'text_domain' ),
+  		'items_list'                 => __( 'Age Group list', 'text_domain' ),
+  		'items_list_navigation'      => __( 'Age Group list navigation', 'text_domain' ),
+  	);
+  	$args = array(
+  		'labels'                     => $labels,
+  		'hierarchical'               => false,
+  		'public'                     => true,
+  		'show_ui'                    => true,
+  		'show_admin_column'          => true,
+  		'show_in_nav_menus'          => false,
+  		'show_tagcloud'              => false,
+  	);
+  	register_taxonomy( 'age_group', array( 'electricguitars', 'basses', 'acoustic_steel', 'acoustic_nylon', 'other_instruments' ), $args );
 
-}
-add_action( 'init', 'year_made_taxonomy', 0 );
+  }
+  add_action( 'init', 'age_group_taxonomy', 0 );
 
-}
+  }

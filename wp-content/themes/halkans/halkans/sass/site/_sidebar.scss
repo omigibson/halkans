@@ -1,0 +1,15 @@
+.filter {
+  background-color: $color__side-bar;
+  color: white;
+  padding: 1rem;
+  border-radius: $border_radius;
+  margin: 0.6rem 2rem 1rem 0;
+
+  div {
+    margin-top: 0.3rem;
+
+    input {
+      margin-right: 0.6rem;
+    }
+  }
+}

@@ -15,10 +15,35 @@
 	margin: 0 0 1.5em;
 }
 
+#content {
+	padding: $size__site-padding;
+}
+
+.header-image #content {
+	padding: 0;
+}
+
 .text-content {
 	width: 60%;
 	background-color: white;
 	padding: 1.5rem;
 	margin: 6rem auto 7rem;
+	border-radius: $border_radius;
 	box-shadow: 5px 5px 11px 5px rgba(168,168,168,0.75);
+}
+
+.product-content {
+	background-color: white;
+	text-align: center;
+	padding: 1rem 1rem 0.5rem;
+	margin-bottom: 2.2rem;
+	border-radius: $border_radius;
+	box-shadow: 4px 4px 11px 5px rgba(168,168,168,0.75);
+	img {
+		margin: 0 0.5rem;
+	}
+}
+
+.product-header {
+	position: relative;
 }

@@ -6,25 +6,39 @@
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+  font-family: $font__heading;
+  font-weight: bold;
+  margin-top: 0;
 }
 
 h1 {
 	margin: 0.6rem 0;
+  font-style: italic;
+  color: $brand__blue;
 }
 
 .front-page-heading {
 	font-family: $font__logo;
 	font-size: 2.5rem;
+  font-style: normal;
 	color: $brand__red;
 }
 
 h1, h2 {
-	font-family: $font__heading;
-	color: $brand__blue;
 	text-align: center;
 }
 
+h2 {
+  font-size: 18.7px;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  margin-bottom: 0.5rem;
+}
+
 .logo {
+  color: $brand__blue;
 	font-family: 'Brush Script', sans-serif;
 	text-shadow: 5px 5px 5px #696969;
 		margin: 0;
@@ -39,4 +53,10 @@ p.logo {
 	font-size: 1.8rem;
 	color: $brand__blue;
 	margin-top: -10px;
+}
+
+.price-heading {
+  position: absolute;
+  right: 0;
+  top: 0;
 }

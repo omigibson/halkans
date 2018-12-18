@@ -267,7 +267,7 @@ msgstr "Hej där! Jag är cykelbud på dagen, blivande skådespelare på natten 
 msgid "This is an example page. It's different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:"
 msgstr "Detta är en exempelsida. Den skiljer sig från ett blogginlägg genom att den finns kvar på samma plats och kommer att visas i din webbplatsnavigering (i de flesta teman). De flesta börjar med en Om-sida som presenterar dem för potentiella besökare. Den skulle t.ex kunna ha följande innehåll:"
 
-#: wp-admin/includes/post.php:2227
+#: wp-admin/includes/post.php:2233
 msgid "This action is still supported in the classic editor, but is deprecated in the block editor."
 msgstr "Denna åtgärd stöds fortfarande i den klassiska redigeraren men finns inte längre kvar i blockredigeraren."
 
@@ -1227,7 +1227,7 @@ msgstr "Ogiltig e-postadress i beställningen."
 msgid "Eraser array at index %d does not include a friendly name."
 msgstr "Raderingsmatrisen vid index %d innehåller inget filtrerat användarnamn."
 
-#: wp-admin/includes/plugin-install.php:595
+#: wp-admin/includes/plugin-install.php:596
 msgid "Requires PHP Version:"
 msgstr "Kräver PHP-version:"
 
@@ -1512,12 +1512,12 @@ msgid "%s (The year of the post, four digits, for example 2004.)"
 msgstr "%s (Inläggets år, fyra siffror, till exempel 2004.)"
 
 #. translators: %s: user's display name
-#: wp-admin/includes/post.php:1628
+#: wp-admin/includes/post.php:1634
 msgid "%s is already editing this post."
 msgstr "%s redigerar redan detta inlägg."
 
 #. translators: %s: user's display name
-#: wp-admin/includes/post.php:1625
+#: wp-admin/includes/post.php:1631
 msgid "%s is already editing this post. Do you want to take over?"
 msgstr "%s redigerar redan detta inlägg. Vill du ta över?"
 
@@ -1533,11 +1533,11 @@ msgstr "<a href=\"https://codex.wordpress.org/Network_Admin_Sites_Screen\">Dokum
 msgid "Custom installation script."
 msgstr "Anpassade intallationsskript."
 
-#: wp-admin/includes/plugin-install.php:602
+#: wp-admin/includes/plugin-install.php:603
 msgid "Active Installations:"
 msgstr "Aktiva installationer:"
 
-#: wp-admin/includes/plugin-install.php:522 wp-admin/update.php:123
+#: wp-admin/includes/plugin-install.php:523 wp-admin/update.php:123
 msgid "Plugin Installation"
 msgstr "Installation av tillägg"
 
@@ -1783,7 +1783,7 @@ msgid "&#8220;%s&#8221; is locked"
 msgstr "&#8221;%s&#8221; är låst"
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:608
-#: wp-admin/includes/plugin-install.php:606
+#: wp-admin/includes/plugin-install.php:607
 msgctxt "Active plugin installations"
 msgid "Less Than 10"
 msgstr "Färre än 10"
@@ -1793,7 +1793,7 @@ msgid "Sorry, you are not allowed to attach files to this post."
 msgstr "Du har inte behörighet att bifoga filer i detta inlägg."
 
 #: wp-admin/includes/plugin-install.php:239
-#: wp-admin/includes/plugin-install.php:612 wp-admin/freedoms.php:84
+#: wp-admin/includes/plugin-install.php:613 wp-admin/freedoms.php:84
 #: wp-admin/plugins.php:418 wp-admin/plugin-install.php:82
 msgid "https://wordpress.org/plugins/"
 msgstr "https://wordpress.org/plugins/"
@@ -2455,11 +2455,11 @@ msgstr "Konstanten %s kan inte vara angiven vid installation av WordPress."
 msgid "Your %s file has an empty database table prefix, which is not supported."
 msgstr "Din %s saknar angivet databasprefix, vilket inte stöds."
 
-#: wp-admin/includes/plugin-install.php:626
+#: wp-admin/includes/plugin-install.php:627
 msgid "Reviews"
 msgstr "Omdömen"
 
-#: wp-admin/includes/plugin-install.php:627
+#: wp-admin/includes/plugin-install.php:628
 msgid "Read all reviews on WordPress.org or write your own!"
 msgstr "Läs alla omdömen eller lägg till ett eget på WordPress.org!"
 
@@ -2471,7 +2471,7 @@ msgstr "Zip-fil med tema"
 msgid "Attach to existing content"
 msgstr "Bifoga till existerande innehåll"
 
-#: wp-admin/includes/post.php:1451
+#: wp-admin/includes/post.php:1457
 msgid "Click the image to edit or update"
 msgstr "Klicka på bilden för att redigera eller uppdatera"
 
@@ -2481,7 +2481,7 @@ msgstr "Du använder en utvecklingsversion av WordPress. Dessa funktionstillägg
 
 #. translators: 1: number of stars (used to determine singular/plural), 2:
 #. number of reviews
-#: wp-admin/includes/plugin-install.php:633
+#: wp-admin/includes/plugin-install.php:634
 msgid "Reviews with %1$d star: %2$s. Opens in a new window."
 msgid_plural "Reviews with %1$d stars: %2$s. Opens in a new window."
 msgstr[0] "Omdömen med %1$d stjärna: %2$d. Öppnas i ett nytt fönster."
@@ -3020,11 +3020,11 @@ msgstr "Hämta version %s"
 msgid "Toggle panel: %s"
 msgstr "Växla panel: %s"
 
-#: wp-admin/includes/post.php:1377
+#: wp-admin/includes/post.php:1383
 msgid "Edit permalink"
 msgstr "Redigera permalänk"
 
-#: wp-admin/includes/post.php:1666
+#: wp-admin/includes/post.php:1672
 msgid "Saving revision&hellip;"
 msgstr "Sparar version&hellip;"
 
@@ -3772,7 +3772,7 @@ msgid "Plugins updated successfully."
 msgstr "Tillägg uppdaterade."
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:606
-#: wp-admin/includes/plugin-install.php:604
+#: wp-admin/includes/plugin-install.php:605
 msgctxt "Active plugin installations"
 msgid "1+ Million"
 msgstr "Över 1 miljon "
@@ -4245,7 +4245,7 @@ msgstr "<strong>Kompatibelt</strong> med din version av WordPress"
 msgid "<strong>Incompatible</strong> with your version of WordPress"
 msgstr "<strong>Inkompatibelt</strong> med din version av WordPress"
 
-#: wp-admin/includes/plugin-install.php:640
+#: wp-admin/includes/plugin-install.php:641
 msgid "%d star"
 msgid_plural "%d stars"
 msgstr[0] "%d stjärna"
@@ -4330,7 +4330,7 @@ msgctxt "Number/count of items"
 msgid "Count"
 msgstr "Antal"
 
-#: wp-admin/includes/plugin-install.php:499
+#: wp-admin/includes/plugin-install.php:500
 msgctxt "Plugin installer section title"
 msgid "Reviews"
 msgstr "Omdömen"
@@ -4340,12 +4340,12 @@ msgctxt "themes"
 msgid "Recently Updated"
 msgstr "Nyligen uppdaterade"
 
-#: wp-admin/includes/plugin-install.php:616
-#: wp-admin/includes/plugin-install.php:670
+#: wp-admin/includes/plugin-install.php:617
+#: wp-admin/includes/plugin-install.php:671
 msgid "Donate to this plugin &#187;"
 msgstr "Donera till detta tillägg &#187;"
 
-#: wp-admin/includes/plugin-install.php:650
+#: wp-admin/includes/plugin-install.php:651
 msgid "Contributors"
 msgstr "Bidragslämnare"
 
@@ -5346,7 +5346,7 @@ msgstr "Ljudformat:"
 msgid "Audio Codec:"
 msgstr "Ljud-codec:"
 
-#: wp-admin/includes/post.php:1667
+#: wp-admin/includes/post.php:1673
 msgid "Your latest changes were saved as a revision."
 msgstr "Din senaste ändring sparades som en egen version."
 
@@ -6090,7 +6090,7 @@ msgstr "Ange en länkadress eller klicka för förinställningar ovan."
 
 #: wp-admin/includes/class-wp-themes-list-table.php:230
 #: wp-admin/includes/class-wp-theme-install-list-table.php:419
-#: wp-admin/includes/plugin-install.php:573
+#: wp-admin/includes/plugin-install.php:574
 msgid "Version:"
 msgstr "Version:"
 
@@ -6410,32 +6410,32 @@ msgstr "För att tillåta denna sida att automatiskt reparera databasproblem, l�
 msgid "No comments awaiting moderation."
 msgstr "Inga kommentarer inväntar granskning."
 
-#: wp-admin/includes/plugin-install.php:500
+#: wp-admin/includes/plugin-install.php:501
 msgctxt "Plugin installer section title"
 msgid "Other Notes"
 msgstr "Övriga noteringar"
 
-#: wp-admin/includes/plugin-install.php:498
+#: wp-admin/includes/plugin-install.php:499
 msgctxt "Plugin installer section title"
 msgid "Changelog"
 msgstr "Ändringslogg"
 
-#: wp-admin/includes/plugin-install.php:496
+#: wp-admin/includes/plugin-install.php:497
 msgctxt "Plugin installer section title"
 msgid "FAQ"
 msgstr "FAQ"
 
-#: wp-admin/includes/plugin-install.php:495
+#: wp-admin/includes/plugin-install.php:496
 msgctxt "Plugin installer section title"
 msgid "Installation"
 msgstr "Installation"
 
-#: wp-admin/includes/plugin-install.php:494
+#: wp-admin/includes/plugin-install.php:495
 msgctxt "Plugin installer section title"
 msgid "Description"
 msgstr "Beskrivning"
 
-#: wp-admin/includes/plugin-install.php:497
+#: wp-admin/includes/plugin-install.php:498
 msgctxt "Plugin installer section title"
 msgid "Screenshots"
 msgstr "Skärmdumpar"
@@ -6444,7 +6444,7 @@ msgstr "Skärmdumpar"
 msgid "You should update your web.config now."
 msgstr "Du bör uppdatera din web.config nu."
 
-#: wp-admin/includes/plugin-install.php:614
+#: wp-admin/includes/plugin-install.php:615
 msgid "Plugin Homepage &#187;"
 msgstr "Tilläggets hemsida  &#187;"
 
@@ -9790,7 +9790,7 @@ msgstr "Position"
 msgid "Save Widget"
 msgstr "Spara widget"
 
-#: wp-admin/includes/misc.php:1084 wp-admin/includes/post.php:1827
+#: wp-admin/includes/misc.php:1084 wp-admin/includes/post.php:1833
 #: wp-admin/widgets.php:342
 msgid "Error while saving."
 msgstr "Fel vid sparande."
@@ -9944,7 +9944,7 @@ msgstr "För att skriva inlägg i WordPress per e-post måste du ha satt upp en 
 msgid "Sorry, you are not allowed to delete these items."
 msgstr "Du har inte behörighet att radera de här objekten."
 
-#: wp-admin/edit-tags.php:156 wp-admin/includes/post.php:1833
+#: wp-admin/edit-tags.php:156 wp-admin/includes/post.php:1839
 #: wp-admin/includes/class-wp-screen.php:282 wp-admin/async-upload.php:47
 #: wp-admin/post.php:20 wp-admin/post.php:44 wp-admin/post.php:123
 #: wp-admin/term.php:38 wp-admin/media-upload.php:46
@@ -11256,53 +11256,53 @@ msgstr "Om du har ett tillägg i .zip-format så kan du installera det genom att
 msgid "Plugin zip file"
 msgstr "Tillägg - ziparkivsfil"
 
-#: wp-admin/includes/plugin-install.php:622
+#: wp-admin/includes/plugin-install.php:623
 msgid "(based on %s rating)"
 msgid_plural "(based on %s ratings)"
 msgstr[0] "(baserat på %s omdöme)"
 msgstr[1] "(baserat på %s omdömen)"
 
-#: wp-admin/includes/plugin-install.php:710
+#: wp-admin/includes/plugin-install.php:711
 msgid "Install Update Now"
 msgstr "Installera uppdatering nu"
 
 #. translators: %s: Plugin version
-#: wp-admin/includes/plugin-install.php:715
+#: wp-admin/includes/plugin-install.php:716
 msgid "Newer Version (%s) Installed"
 msgstr "Nyare version (%s) installerad"
 
-#: wp-admin/includes/plugin-install.php:718
+#: wp-admin/includes/plugin-install.php:719
 msgid "Latest Version Installed"
 msgstr "Senaste versionen installerad"
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:601
-#: wp-admin/includes/plugin-install.php:577
+#: wp-admin/includes/plugin-install.php:578
 msgid "Last Updated:"
 msgstr "Senast uppdaterat:"
 
-#: wp-admin/includes/plugin-install.php:585
+#: wp-admin/includes/plugin-install.php:586
 msgid "Requires WordPress Version:"
 msgstr "Kräver WordPress version:"
 
 #. translators: %s: version number
-#: wp-admin/includes/plugin-install.php:588
-#: wp-admin/includes/plugin-install.php:598
+#: wp-admin/includes/plugin-install.php:589
+#: wp-admin/includes/plugin-install.php:599
 msgid "%s or higher"
 msgstr "%s eller högre"
 
-#: wp-admin/includes/plugin-install.php:592
+#: wp-admin/includes/plugin-install.php:593
 msgid "Compatible up to:"
 msgstr "Kompatibelt upp till:"
 
-#: wp-admin/includes/plugin-install.php:612
+#: wp-admin/includes/plugin-install.php:613
 msgid "WordPress.org Plugin Page &#187;"
 msgstr "WordPress.org tilläggssida &#187;"
 
-#: wp-admin/includes/plugin-install.php:620
+#: wp-admin/includes/plugin-install.php:621
 msgid "Average Rating"
 msgstr "Genomsnittligt omdöme"
 
-#: wp-admin/includes/plugin-install.php:681
+#: wp-admin/includes/plugin-install.php:682
 msgid "<strong>Warning:</strong> This plugin has <strong>not been marked as compatible</strong> with your version of WordPress."
 msgstr "<strong>Varning:</strong> Det här tillägget har <strong>inte markerats som kompatibelt</strong> med din version av WordPress."
 
@@ -11590,7 +11590,7 @@ msgstr "Tillägget <strong>%s %s</strong> har installerats."
 msgid "Successfully installed the theme <strong>%1$s %2$s</strong>."
 msgstr "Temat <strong>%1$s %2$s</strong> har installerats."
 
-#: wp-admin/includes/plugin-install.php:679
+#: wp-admin/includes/plugin-install.php:680
 msgid "<strong>Warning:</strong> This plugin has <strong>not been tested</strong> with your current version of WordPress."
 msgstr "<strong>Varning:</strong> Det här tillägget har <strong>inte testats</strong> med din nuvarande version av WordPress."
 

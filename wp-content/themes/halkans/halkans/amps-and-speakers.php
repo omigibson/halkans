@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Amps & Speakers page
+ * Template Name: Amps & Speakers
  *
  */
 
@@ -13,7 +13,7 @@
  		<?php if ( have_posts() ) : ?>
 
  			<header class="page-header">
- 				<h1><?php single_cat_title(); ?></h1>
+ 				<h1><?php single_post_title(); ?></h1>
  			</header><!-- .page-header -->
 
  			<?php
@@ -28,7 +28,7 @@
  		    $loop->the_post();
  		    ?>
  		    <div class="entry-content">
- 		        <?php the_title(); ?>
+ 		        <h2><?php the_title(); ?></h2>
  		        <?php the_content(); ?>
  		    </div>
  		    <?php

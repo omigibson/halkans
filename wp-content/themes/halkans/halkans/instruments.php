@@ -9,15 +9,12 @@
 
  	<div id="primary" class="content-area">
  		<main id="main" class="site-main">
-
- 		<?php if ( have_posts() ) : ?>
-
- 			<header class="page-header">
- 				<h1><?php single_cat_title(); ?></h1>
+      <header class="page-header">
+ 				<h1><?php single_post_title(); ?></h1>
  			</header><!-- .page-header -->
+      <div id="posts">
 
- 			<?php
-
+ 		<?php if ( have_posts() ) :
  			/* Start the Loop */
       $args = [
      'post_type'      => get_query_var('pagename'),
@@ -28,10 +25,12 @@
  		while ($loop->have_posts()) {
  		    $loop->the_post();
  		    ?>
- 		    <div class="entry-content">
+ 		    <div class="entry-content product-content">
+          <div class="product-header">
  		        <h2><?php the_title(); ?></h2>
-            <h3><?php the_field('Price'); ?></h3>
- 		        <p><?php the_content(); ?></p>
+            <h3 class="price-heading"><?php the_field('Price'); ?></h3>
+          </div>
+ 		        <?php the_content(); ?>
  		    </div>
  		    <?php
  		}
@@ -44,6 +43,7 @@
 
  		endif;
  		?>
+  </div>
 
  		</main><!-- #main -->
  	</div><!-- #primary -->

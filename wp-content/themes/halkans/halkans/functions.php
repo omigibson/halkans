@@ -144,6 +144,7 @@ function filter_script() {
 add_action( 'wp_enqueue_scripts', 'filter_script' );
 
 //Custom filter
+
 function filter_function(){
 	$args = array(
 		'orderby' => 'date', // we will sort posts by date
@@ -166,7 +167,7 @@ function filter_function(){
 					'terms' => $_POST['price']
 				),
 				array(
-					'taxonomy' => 'year_made',
+					'taxonomy' => 'age_group',
 					'field' => 'id',
 					'terms' => $_POST['year']
 				)
@@ -194,7 +195,7 @@ function filter_function(){
 					'terms' => $_POST['brand']
 				),
 				array(
-					'taxonomy' => 'year_made',
+					'taxonomy' => 'age_group',
 					'field' => 'id',
 					'terms' => $_POST['year']
 				)
@@ -208,7 +209,7 @@ function filter_function(){
 					'terms' => $_POST['price']
 				),
 				array(
-					'taxonomy' => 'year_made',
+					'taxonomy' => 'age_group',
 					'field' => 'id',
 					'terms' => $_POST['year']
 				)
@@ -225,6 +226,11 @@ function filter_function(){
 						'taxonomy' => 'price_group',
 						'field' => 'id',
 						'terms' => $_POST['price']
+					),
+					array(
+						'taxonomy' => 'age_group',
+						'field' => 'id',
+						'terms' => $_POST['year']
 					)
 				);
 		endif;
@@ -234,8 +240,16 @@ function filter_function(){
 	//Loop through and echo out the result of the query
 		if( $query->have_posts() ) :
 			while( $query->have_posts() ): $query->the_post();
-				echo '<h2>' . $query->post->post_title . '</h2>';
-				echo '<p>' . $query->post->post_content . '</p>';
+				echo
+				'<div class="entry-content product-content">
+					<div class="product-header">
+					<h2>' . $query->post->post_title . '</h2>';
+					$post_id = get_the_ID();
+					echo '<h3 class="price-heading">' . get_post_meta( $post_id, 'Price', true ) . '</h3>
+					</div>';
+				$content = $query->post->post_content;
+				echo apply_filters('the_content', $content);
+				echo '</div>';
 			endwhile;
 			wp_reset_postdata();
 		else :

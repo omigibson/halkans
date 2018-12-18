@@ -22,6 +22,11 @@ function halkans_body_classes( $classes ) {
 		$classes[] = 'no-sidebar';
 	}
 
+	//Adds a class of header-image to pages that have it
+	if ( is_page( 'Home' ) || is_page( 'We buy' ) || is_page( 'Repairs' ) ) {
+		$classes[] = 'header-image';
+	}
+
 	return $classes;
 }
 add_filter( 'body_class', 'halkans_body_classes' );
