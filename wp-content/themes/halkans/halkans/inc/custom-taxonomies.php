@@ -80,7 +80,7 @@
   		'show_in_nav_menus'          => false,
   		'show_tagcloud'              => false,
   	);
-  	register_taxonomy( 'price_group', array( 'electricguitars', 'basses', 'acoustic_steel', 'acoustic_nylon', 'other_instruments' ), $args );
+  	register_taxonomy( 'price_group', array( 'electricguitars', 'basses', 'acoustic_steel', 'acoustic_nylon', 'other_instruments', 'ampsspeakers', 'partsaccessories' ), $args );
 
   }
   add_action( 'init', 'price_group_taxonomy', 0 );
@@ -123,7 +123,7 @@
   		'show_in_nav_menus'          => false,
   		'show_tagcloud'              => false,
   	);
-  	register_taxonomy( 'age_group', array( 'electricguitars', 'basses', 'acoustic_steel', 'acoustic_nylon', 'other_instruments' ), $args );
+  	register_taxonomy( 'age_group', array( 'electricguitars', 'basses', 'acoustic_steel', 'acoustic_nylon', 'other_instruments', 'ampsspeakers', 'partsaccessories' ), $args );
 
   }
   add_action( 'init', 'age_group_taxonomy', 0 );

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Instruments page
+ * Template Name: Product page
  *
  */
 
