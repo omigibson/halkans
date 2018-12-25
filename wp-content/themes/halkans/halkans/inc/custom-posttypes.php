@@ -156,7 +156,7 @@ function acoustic_steel_stringed_guitars_post_type() {
 		'label'                 => __( 'Acoustic Steel Stringed Guitars', 'text_domain' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor' ),
-    'taxonomies'            => array( 'brand', 'price_group', 'age_group' ),
+    'taxonomies'            => array( 'acoustic_steel_brand', 'price_group', 'age_group' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -333,7 +333,7 @@ function create_amp_post_type() {
 		'label'                 => __( 'Amps & Speakers', 'text_domain' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'custom-fields' ),
-		'taxonomies'            => array( 'brand', 'price_group', 'age_group' ),
+		'taxonomies'            => array( 'amp_brand', 'price_group', 'age_group' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -354,20 +354,79 @@ add_action( 'init', 'create_amp_post_type', 0 );
 
 }
 
-if ( ! function_exists('create_accessory_post_type') ) {
+if ( ! function_exists('create_hardware_post_type') ) {
 
-// PARTS & ACCESSORIES
-function create_accessory_post_type() {
+// Register Custom Post Type
+function create_hardware_post_type() {
 
 	$labels = array(
-		'name'                  => _x( 'Parts & Accessories', 'Post Type General Name', 'text_domain' ),
-		'singular_name'         => _x( 'Parts & Accessories', 'Post Type Singular Name', 'text_domain' ),
-		'menu_name'             => __( 'Parts & Accessories', 'text_domain' ),
-		'name_admin_bar'        => __( 'Post Parts & Accessories', 'text_domain' ),
-		'archives'              => __( 'Parts & AccessoriesArchives', 'text_domain' ),
-		'attributes'            => __( 'Parts & Accessories Attributes', 'text_domain' ),
+		'name'                  => _x( 'Hardware & Pickups', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Hardware & Pickups', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Hardware & Pickups', 'text_domain' ),
+		'name_admin_bar'        => __( 'Hardware & Pickups', 'text_domain' ),
+		'archives'              => __( 'Hardware & Pickups Archives', 'text_domain' ),
+		'attributes'            => __( 'Hardware & Pickups Attributes', 'text_domain' ),
 		'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),
 		'all_items'             => __( 'All Items', 'text_domain' ),
+		'add_new_item'          => __( 'Add New Hardware & Pickups', 'text_domain' ),
+		'add_new'               => __( 'Add New', 'text_domain' ),
+		'new_item'              => __( 'New Item', 'text_domain' ),
+		'edit_item'             => __( 'Edit Item', 'text_domain' ),
+		'update_item'           => __( 'Update Item', 'text_domain' ),
+		'view_item'             => __( 'View Item', 'text_domain' ),
+		'view_items'            => __( 'View Items', 'text_domain' ),
+		'search_items'          => __( 'Search Hardware & Pickups', 'text_domain' ),
+		'not_found'             => __( 'Not found', 'text_domain' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
+		'featured_image'        => __( 'Featured Image', 'text_domain' ),
+		'set_featured_image'    => __( 'Set featured image', 'text_domain' ),
+		'remove_featured_image' => __( 'Remove featured image', 'text_domain' ),
+		'use_featured_image'    => __( 'Use as featured image', 'text_domain' ),
+		'insert_into_item'      => __( 'Insert into item', 'text_domain' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this item', 'text_domain' ),
+		'items_list'            => __( 'Hardware & Pickups list', 'text_domain' ),
+		'items_list_navigation' => __( 'Hardware & Pickups list navigation', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter Hardware & Pickups list', 'text_domain' ),
+	);
+	$args = array(
+		'label'                 => __( 'Hardware & Pickups', 'text_domain' ),
+		'description'           => __( 'Post Type Description', 'text_domain' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'hardwarepickups', $args );
+
+}
+add_action( 'init', 'create_hardware_post_type', 0 );
+
+}
+
+if ( ! function_exists('necks_bridges_post_type') ) {
+
+// Register Custom Post Type
+function necks_bridges_post_type() {
+
+	$labels = array(
+		'name'                  => _x( 'Necks & Bridges', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Necks & Bridges', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Necks & Bridges', 'text_domain' ),
+		'name_admin_bar'        => __( 'Necks & Bridges', 'text_domain' ),
+		'archives'              => __( 'Necks & Bridges Archives', 'text_domain' ),
+		'attributes'            => __( 'Necks & Bridges Attributes', 'text_domain' ),
+		'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),
+		'all_items'             => __( 'All Necks & Bridges', 'text_domain' ),
 		'add_new_item'          => __( 'Add New Item', 'text_domain' ),
 		'add_new'               => __( 'Add New', 'text_domain' ),
 		'new_item'              => __( 'New Item', 'text_domain' ),
@@ -384,32 +443,268 @@ function create_accessory_post_type() {
 		'use_featured_image'    => __( 'Use as featured image', 'text_domain' ),
 		'insert_into_item'      => __( 'Insert into item', 'text_domain' ),
 		'uploaded_to_this_item' => __( 'Uploaded to this item', 'text_domain' ),
-		'items_list'            => __( 'Parts & Accessories list', 'text_domain' ),
-		'items_list_navigation' => __( 'Parts & Accessories list navigation', 'text_domain' ),
-		'filter_items_list'     => __( 'Filter Parts & Accessories list', 'text_domain' ),
+		'items_list'            => __( 'Necks & Bridges list', 'text_domain' ),
+		'items_list_navigation' => __( 'Necks & Bridges list navigation', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter Necks & Bridges list', 'text_domain' ),
 	);
 	$args = array(
-		'label'                 => __( 'Parts & Accessories', 'text_domain' ),
+		'label'                 => __( 'Necks & Bridges', 'text_domain' ),
+		'description'           => __( 'Post Type Description', 'text_domain' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor' ),
-		'taxonomies'            => array( 'brand', ' price_group', 'age_group' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
 		'show_in_menu'          => true,
 		'menu_position'         => 5,
 		'show_in_admin_bar'     => true,
-		'show_in_nav_menus'     => false,
+		'show_in_nav_menus'     => true,
 		'can_export'            => true,
 		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
-	register_post_type( 'Parts & Accessories', $args );
+	register_post_type( 'necksbridges', $args );
 
 }
-add_action( 'init', 'create_accessory_post_type', 0 );
+add_action( 'init', 'necks_bridges_post_type', 0 );
+
+}
+
+if ( ! function_exists('create_cases_post_type') ) {
+
+// Register Custom Post Type
+function create_cases_post_type() {
+
+	$labels = array(
+		'name'                  => _x( 'Cases', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Cases', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Cases', 'text_domain' ),
+		'name_admin_bar'        => __( 'Cases', 'text_domain' ),
+		'archives'              => __( 'Cases Archives', 'text_domain' ),
+		'attributes'            => __( 'Case Attributes', 'text_domain' ),
+		'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),
+		'all_items'             => __( 'All Cases', 'text_domain' ),
+		'add_new_item'          => __( 'Add New Case', 'text_domain' ),
+		'add_new'               => __( 'Add New', 'text_domain' ),
+		'new_item'              => __( 'New Case', 'text_domain' ),
+		'edit_item'             => __( 'Edit Case', 'text_domain' ),
+		'update_item'           => __( 'Update Case', 'text_domain' ),
+		'view_item'             => __( 'View Case', 'text_domain' ),
+		'view_items'            => __( 'View Cases', 'text_domain' ),
+		'search_items'          => __( 'Search Case', 'text_domain' ),
+		'not_found'             => __( 'Not found', 'text_domain' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
+		'featured_image'        => __( 'Featured Image', 'text_domain' ),
+		'set_featured_image'    => __( 'Set featured image', 'text_domain' ),
+		'remove_featured_image' => __( 'Remove featured image', 'text_domain' ),
+		'use_featured_image'    => __( 'Use as featured image', 'text_domain' ),
+		'insert_into_item'      => __( 'Insert into Case', 'text_domain' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this Case', 'text_domain' ),
+		'items_list'            => __( 'Cases list', 'text_domain' ),
+		'items_list_navigation' => __( 'Cases list navigation', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter Cases list', 'text_domain' ),
+	);
+	$args = array(
+		'label'                 => __( 'Cases', 'text_domain' ),
+		'description'           => __( 'Post Type Description', 'text_domain' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'cases', $args );
+
+}
+add_action( 'init', 'create_cases_post_type', 0 );
+
+}
+
+if ( ! function_exists('stomp_box_post_type') ) {
+
+// Register Custom Post Type
+function stomp_box_post_type() {
+
+	$labels = array(
+		'name'                  => _x( 'Stomp Boxes', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Stomp Boxes', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Stomp Boxes', 'text_domain' ),
+		'name_admin_bar'        => __( 'Stomp Boxes', 'text_domain' ),
+		'archives'              => __( 'Stomp Boxes Archives', 'text_domain' ),
+		'attributes'            => __( 'Stomp Box Attributes', 'text_domain' ),
+		'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),
+		'all_items'             => __( 'All Stomp Boxes', 'text_domain' ),
+		'add_new_item'          => __( 'Add New Stomp Box', 'text_domain' ),
+		'add_new'               => __( 'Add New', 'text_domain' ),
+		'new_item'              => __( 'New Stomp Box', 'text_domain' ),
+		'edit_item'             => __( 'Edit Stomp Box', 'text_domain' ),
+		'update_item'           => __( 'Update Stomp Box', 'text_domain' ),
+		'view_item'             => __( 'View Stomp Box', 'text_domain' ),
+		'view_items'            => __( 'View Stomp Boxes', 'text_domain' ),
+		'search_items'          => __( 'Search Stomp Box', 'text_domain' ),
+		'not_found'             => __( 'Not found', 'text_domain' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
+		'featured_image'        => __( 'Featured Image', 'text_domain' ),
+		'set_featured_image'    => __( 'Set featured image', 'text_domain' ),
+		'remove_featured_image' => __( 'Remove featured image', 'text_domain' ),
+		'use_featured_image'    => __( 'Use as featured image', 'text_domain' ),
+		'insert_into_item'      => __( 'Insert into Stomp Box', 'text_domain' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this Stomp Box', 'text_domain' ),
+		'items_list'            => __( 'Stomp Boxes list', 'text_domain' ),
+		'items_list_navigation' => __( 'Stomp Boxes list navigation', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter Stomp Boxes list', 'text_domain' ),
+	);
+	$args = array(
+		'label'                 => __( 'Stomp Boxes', 'text_domain' ),
+		'description'           => __( 'Post Type Description', 'text_domain' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'stomp_boxes', $args );
+
+}
+add_action( 'init', 'stomp_box_post_type', 0 );
+
+}
+
+if ( ! function_exists('strings_straps_post_type') ) {
+
+// Register Custom Post Type
+function strings_straps_post_type() {
+
+	$labels = array(
+		'name'                  => _x( 'Strings & Straps', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Strings & Straps', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Strings & Straps', 'text_domain' ),
+		'name_admin_bar'        => __( 'Strings & Straps', 'text_domain' ),
+		'archives'              => __( 'Strings & Straps Archives', 'text_domain' ),
+		'attributes'            => __( 'Strings & Straps Attributes', 'text_domain' ),
+		'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),
+		'all_items'             => __( 'All Items', 'text_domain' ),
+		'add_new_item'          => __( 'Add New Item', 'text_domain' ),
+		'add_new'               => __( 'Add New', 'text_domain' ),
+		'new_item'              => __( 'New Item', 'text_domain' ),
+		'edit_item'             => __( 'Edit Item', 'text_domain' ),
+		'update_item'           => __( 'Update Item', 'text_domain' ),
+		'view_item'             => __( 'View Item', 'text_domain' ),
+		'view_items'            => __( 'View Strings & Straps', 'text_domain' ),
+		'search_items'          => __( 'Search Item', 'text_domain' ),
+		'not_found'             => __( 'Not found', 'text_domain' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
+		'featured_image'        => __( 'Featured Image', 'text_domain' ),
+		'set_featured_image'    => __( 'Set featured image', 'text_domain' ),
+		'remove_featured_image' => __( 'Remove featured image', 'text_domain' ),
+		'use_featured_image'    => __( 'Use as featured image', 'text_domain' ),
+		'insert_into_item'      => __( 'Insert into item', 'text_domain' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this item', 'text_domain' ),
+		'items_list'            => __( 'Strings & Straps list', 'text_domain' ),
+		'items_list_navigation' => __( 'Strings & Straps list navigation', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter Strings & Straps list', 'text_domain' ),
+	);
+	$args = array(
+		'label'                 => __( 'Strings & Straps', 'text_domain' ),
+		'description'           => __( 'Post Type Description', 'text_domain' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'stringsstraps', $args );
+
+}
+add_action( 'init', 'strings_straps_post_type', 0 );
+
+}
+
+if ( ! function_exists('replacement_speakers_post_type') ) {
+
+// Register Custom Post Type
+function replacement_speakers_post_type() {
+
+	$labels = array(
+		'name'                  => _x( 'Replacement Speakers', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Replacement Speakers', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Replacement Speakers', 'text_domain' ),
+		'name_admin_bar'        => __( 'Replacement Speakers', 'text_domain' ),
+		'archives'              => __( 'Replacement Speakers Archives', 'text_domain' ),
+		'attributes'            => __( 'Replacement Speakers Attributes', 'text_domain' ),
+		'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),
+		'all_items'             => __( 'All Replacement Speakers', 'text_domain' ),
+		'add_new_item'          => __( 'Add New Replacement Speaker', 'text_domain' ),
+		'add_new'               => __( 'Add New', 'text_domain' ),
+		'new_item'              => __( 'New Replacement Speaker', 'text_domain' ),
+		'edit_item'             => __( 'Edit Replacement Speaker', 'text_domain' ),
+		'update_item'           => __( 'Update Replacement Speaker', 'text_domain' ),
+		'view_item'             => __( 'View Replacement Speaker', 'text_domain' ),
+		'view_items'            => __( 'View Replacement Speakers', 'text_domain' ),
+		'search_items'          => __( 'Search Replacement Speaker', 'text_domain' ),
+		'not_found'             => __( 'Not found', 'text_domain' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
+		'featured_image'        => __( 'Featured Image', 'text_domain' ),
+		'set_featured_image'    => __( 'Set featured image', 'text_domain' ),
+		'remove_featured_image' => __( 'Remove featured image', 'text_domain' ),
+		'use_featured_image'    => __( 'Use as featured image', 'text_domain' ),
+		'insert_into_item'      => __( 'Insert into Replacement Speaker', 'text_domain' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this Replacement Speaker', 'text_domain' ),
+		'items_list'            => __( 'Replacement Speakers list', 'text_domain' ),
+		'items_list_navigation' => __( 'Replacement Speakers list navigation', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter Replacement Speakers list', 'text_domain' ),
+	);
+	$args = array(
+		'label'                 => __( 'Replacement Speakers', 'text_domain' ),
+		'description'           => __( 'Post Type Description', 'text_domain' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'replacement_speakers', $args );
+
+}
+add_action( 'init', 'replacement_speakers_post_type', 0 );
 
 }
 

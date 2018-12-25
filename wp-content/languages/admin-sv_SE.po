@@ -97,131 +97,131 @@ msgctxt "CSS Font Family for Editor Font"
 msgid "Noto Serif"
 msgstr "Noto Serif"
 
-#: wp-admin/about.php:440
+#: wp-admin/about.php:458
 msgid "Note to users of assistive technology: if you experience usability issues with the block editor, we recommend you continue to use the Classic Editor."
 msgstr "Information för dig som använder tekniska hjälpmedel: Om du har tillgänglighetsproblem med blockredigeraren rekommenderar vi att du använder den klassiska redigeraren tills vidare."
 
-#: wp-admin/about.php:439
+#: wp-admin/about.php:457
 msgid "The Classic Editor plugin restores the previous WordPress editor and the Edit Post screen. It lets you keep using plugins that extend it, add old-style meta boxes, or otherwise depend on the previous editor. To install, visit your plugins page and click the &#8220;Install Now&#8221; button next to &#8220;Classic Editor&#8221;. After the plugin finishes installing, click &#8220;Activate&#8221;. That’s it!"
 msgstr "Tillägget Classic Editor återställer den tidigare WordPress-redigeraren och skärmen för inläggsredigering. Det låter dig fortsätta att använda tillägg som utökar den klassiska redigeringsmiljön, lägger till meta-rutor av den tidigare typen eller på annat sätt är beroende av den tidigare redigeraren. Installera den genom att gå till sidan för inlägg och klickan på knappen ”Installera nu” intill ”Classic Editor”. När tillägget har installerats klickar du på ”Aktivera”. Så enkelt är det!"
 
-#: wp-admin/about.php:408
+#: wp-admin/about.php:426
 msgid "The new block paradigm opens up a path of exploration and imagination when it comes to solving user needs. With the unified block insertion flow, it&#8217;s easier for your clients and customers to find and use blocks for all types of content. Developers can focus on executing their vision and providing rich editing experiences, rather than fussing with difficult APIs."
 msgstr "Det nya block-paradigmet banar nya vägar för utforskning och fantasi vad gäller att lösa användarens problem. Med det enhetliga flödet för infogning av block blir det enklare för dina kunder att hitta och använda olika block för alla typer av innehåll. Utvecklare kan koncentrera sig på att förverkliga sina visioner och att tillhandahålla en rik redigeringsupplevelse, snarare än att trassla med komplicerade API:er."
 
-#: wp-admin/about.php:414
+#: wp-admin/about.php:432
 msgid "Learn how to get started"
 msgstr "Så här kommer du igång"
 
-#: wp-admin/about.php:423
+#: wp-admin/about.php:441
 msgid "Keep it Classic"
 msgstr "Behålla den klassiska miljön"
 
-#: wp-admin/about.php:438
+#: wp-admin/about.php:456
 msgid "Prefer to stick with the familiar Classic Editor? No problem! Support for the Classic Editor plugin will remain in WordPress through 2021."
 msgstr "Föredrar du att fortsätta med den inarbetade klassiska redigeraren? Det går alldeles utmärkt! WordPress kommer att ha stöd för tillägget Classic Editor till och med år 2021."
 
-#: wp-admin/about.php:400
+#: wp-admin/about.php:418
 msgid "Take advantage of a wide collection of APIs and interface components to easily create blocks with intuitive controls for your clients. Utilizing these components not only speeds up development work but also provide a more consistent, usable, and accessible interface to all users."
 msgstr "Dra fördel av ett stort urval API:er och gränssnittskomponenter som låter dig enkelt skapa block med hjälp av intuitiva verktyg. Genom att använda dessa komponenter både snabbar du upp utvecklingsarbetet och erbjuder ett mer konsekvent, användbart och tillgängligt gränssnitt för alla användare."
 
-#: wp-admin/about.php:399
+#: wp-admin/about.php:417
 msgid "Compose"
 msgstr "Komponera"
 
-#: wp-admin/about.php:392
+#: wp-admin/about.php:410
 msgid "Blocks provide a comfortable way for users to change content directly, while also ensuring the content structure cannot be easily disturbed by accidental code edits. This allows the developer to control the output, building polished and semantic markup that is preserved through edits and not easily broken."
 msgstr "Block erbjuder ett bekvämt sätt för användarna att direkt redigera innehållet, samtidigt som innehållets struktur inte kan störas alltför enkelt på grund av att man råkat redigera någon kod. Det låter utvecklaren kontrollera utseendet och skapa välvårdad och semantiskt markerad html-kod som inte påverkas av redigering och inte riskerar att förstöras av misstag."
 
-#: wp-admin/about.php:391
+#: wp-admin/about.php:409
 msgid "Protect"
 msgstr "Skydda"
 
-#: wp-admin/about.php:365
+#: wp-admin/about.php:383
 msgid "Twenty Nineteen is designed to work for a wide variety of use cases. Whether you’re running a photo blog, launching a new business, or supporting a non-profit, Twenty Nineteen is flexible enough to fit your needs."
 msgstr "Temat Twenty Nineteen är utformat för att fungera i många olika tillämpningar. Vare sig du har en fotoblogg, startar ett nytt företag eller stödjer en ideell förening är Twenty Nineteen så flexibelt att det passar dina behov."
 
-#: wp-admin/about.php:372
+#: wp-admin/about.php:390
 msgid "Give Twenty Nineteen a try"
 msgstr "Prova Twenty Nineteen"
 
-#: wp-admin/about.php:360
+#: wp-admin/about.php:378
 msgid "Featuring ample whitespace, and modern sans-serif headlines paired with classic serif body text, Twenty Nineteen is built to be beautiful on the go. It uses system fonts to increase loading speed. No more long waits on slow networks!"
 msgstr "Twenty Nineteen använder gott om fria ytor och moderna, serifflösa rubriker, kombinerade med brödtext som har klassiska seriffer, för att ge ett vackert intryck direkt från start. Temat använder systemtypsnitt för snabbare sidladdning. Du behöver inte längre vänta onödigt länge om du har ett långsamt nätverk!"
 
-#: wp-admin/about.php:364
+#: wp-admin/about.php:382
 msgid "Versatile design for all sites"
 msgstr "Mångsidig desig för alla webbplatser"
 
-#: wp-admin/about.php:352
+#: wp-admin/about.php:370
 msgid "Twenty Nineteen features custom styles for the blocks available by default in 5.0. It makes extensive use of editor styles throughout the theme. That way, what you create in your content editor is what you see on the front of your site."
 msgstr "Twenty Nineteen innehåller anpassade stilar för de block som ingår som standard i version 5.0. Det använder i hög grad redigerarens stilar överallt i temat. Det innebär att du i din innehållsredigerare kan skapa det som visas på de publika delarna av din webbplats."
 
-#: wp-admin/about.php:359
+#: wp-admin/about.php:377
 msgid "Simple, type-driven layout"
 msgstr "Enkel layout som bygger på innehållstyper"
 
-#: wp-admin/about.php:341
+#: wp-admin/about.php:359
 msgid "Introducing Twenty Nineteen, a new default theme that shows off the power of the new editor."
 msgstr "Låt oss presentera Twenty Nineteen, ett nytt standardtema som demonstrerar styrkan hos den nya redigeraren."
 
-#: wp-admin/about.php:351
+#: wp-admin/about.php:369
 msgid "Designed for the block editor"
 msgstr "Utformat för blockredigeraren"
 
-#: wp-admin/about.php:300
+#: wp-admin/about.php:318
 msgid "This new editing experience provides a more consistent treatment of design as well as content. If you&#8217;re building client sites, you can create reusable blocks. This lets your clients add new content anytime, while still maintaining a consistent look and feel."
 msgstr "Den nya redigeringsupplevelsen ger en mer konsekvent hantering av både design och innehåll. Om du bygger webbplatser åt beställare kan du skapa återanvändbara block. På det sättet kan dina kunder när som helst lägga till innehåll samtidigt som utseendet och känslan hålls konsekvent."
 
-#: wp-admin/about.php:312
+#: wp-admin/about.php:330
 msgid "Build your first post"
 msgstr "Bygg ditt första inlägg"
 
-#: wp-admin/about.php:322
+#: wp-admin/about.php:340
 msgid "A Stunning New Default Theme"
 msgstr "Ett nytt, mycket vackert standardtema"
 
-#: wp-admin/about.php:335
+#: wp-admin/about.php:353
 msgid "The front-end of Twenty Nineteen on the left, and how it looks in the editor on the right."
 msgstr "Hur Twenty Nineteen ser ut för besökaren till vänster och hur det ser ut i redigaren till höger."
 
-#: wp-admin/about.php:146
+#: wp-admin/about.php:164
 msgid "We have tons of blocks available by default, and more get added by the community every day. Here are a few of the blocks to help you get started:"
 msgstr "Vi har massor av olika block som är tillgängliga som standard, och det kommer nya block varje dag från gemenskapen runt WordPress. Här visar vi några av blocken för att hjälpa dig att komma igång:"
 
-#: wp-admin/about.php:299
+#: wp-admin/about.php:317
 msgid "Freedom to Build, Freedom to Write"
 msgstr "Frihet att skapa, frihet att skriva"
 
-#: wp-admin/about.php:144 wp-admin/about.php:304
+#: wp-admin/about.php:162 wp-admin/about.php:322
 msgid "Your browser doesn&#8217;t support HTML5 video. Here is a %1$slink to the video%2$s instead."
 msgstr "Din webbläsare saknar stöd för video i HTML5. Här är en %1$slänk till samma video%2$s istället."
 
-#: wp-admin/about.php:140
+#: wp-admin/about.php:158
 msgid "The new block-based editor won&#8217;t change the way any of your content looks to your visitors. What it will do is let you insert any type of multimedia in a snap and rearrange to your heart&#8217;s content. Each piece of content will be in its own block; a distinct wrapper for easy maneuvering. If you&#8217;re more of an HTML and CSS sort of person, then the blocks won&#8217;t stand in your way. WordPress is here to simplify the process, not the outcome."
 msgstr "Den nya, blockbaserade redigeraren påverkar inte hur ditt innehåll visas för dina webbplatsbesökare. Men den låter dig lägga in alla typer av multimedia på ett ögonblick och strukturera om ditt innehåll efter eget tycke. Varje del av innehållet ligger i sitt eget block, tydliga paket som underlättar manövreringen. Om du hellre arbetar med HTML och CSS kommer inte blocken att störa dig. WordPress är tänkt att underlätta processen, men inte att ge ett simpelt slutresultat."
 
-#: wp-admin/about.php:105
+#: wp-admin/about.php:123
 msgid "Do more with fewer plugins."
 msgstr "Få mer gjort med färre tillägg."
 
-#: wp-admin/about.php:114
+#: wp-admin/about.php:132
 msgid "Create modern, multimedia-heavy layouts."
 msgstr "Skapa moderna layouter med mycket multimedia."
 
-#: wp-admin/about.php:123
+#: wp-admin/about.php:141
 msgid "Work across all screen sizes and devices."
 msgstr "Publicera för alla tänkbara skärmstorlekare och enheter."
 
-#: wp-admin/about.php:132
+#: wp-admin/about.php:150
 msgid "Trust that your editor looks like your website."
 msgstr "Lita på att din redigerare ser likadan ut som din webbplats."
 
-#: wp-admin/about.php:139
+#: wp-admin/about.php:157
 msgid "Building with Blocks"
 msgstr "Bygg med block"
 
-#: wp-admin/about.php:94
+#: wp-admin/about.php:112
 msgid "You&#8217;ve successfully upgraded to WordPress 5.0! We’ve made some big changes to the editor. Our new block-based editor is the first step toward an exciting new future with a streamlined editing experience across your site. You’ll have more flexibility with how content is displayed, whether you are building your first site, revamping your blog, or write code for a living."
 msgstr "Du har uppgraderat till WordPress 5.0! Vi har genomfört stora förändringar i redigeraren. Vår nya, blockbaserade redigerare är det första steget mot en spännande framtid med ett förenklat redigeringsförfarande överallt på din webbplats. Du får större flexibilitet med hur ditt innehåll presenteras, oavsett om du skapar din första webbplats, bygger om din blogg eller är professionell programmerare."
 
@@ -238,7 +238,7 @@ msgstr "Tack för att du uppdaterat till den senaste versionen! WordPress %s lan
 msgid "Welcome to WordPress. This is your first post. Edit or delete it, then start writing!"
 msgstr "Välkommen till WordPress. Detta är ditt första inlägg. Du kan redigera det eller ta bort det. Sedan är det bara att börja skriva!"
 
-#: wp-admin/about.php:79
+#: wp-admin/about.php:97
 msgid "Say Hello to the New Editor"
 msgstr "Välkomna den nya redigeraren"
 
@@ -266,10 +266,6 @@ msgstr "Hej där! Jag är cykelbud på dagen, blivande skådespelare på natten 
 #: wp-admin/includes/upgrade.php:232
 msgid "This is an example page. It's different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:"
 msgstr "Detta är en exempelsida. Den skiljer sig från ett blogginlägg genom att den finns kvar på samma plats och kommer att visas i din webbplatsnavigering (i de flesta teman). De flesta börjar med en Om-sida som presenterar dem för potentiella besökare. Den skulle t.ex kunna ha följande innehåll:"
-
-#: wp-admin/includes/post.php:2233
-msgid "This action is still supported in the classic editor, but is deprecated in the block editor."
-msgstr "Denna åtgärd stöds fortfarande i den klassiska redigeraren men finns inte längre kvar i blockredigeraren."
 
 #. translators: %s: post title
 #: wp-admin/includes/class-wp-posts-list-table.php:1308
@@ -338,7 +334,7 @@ msgstr "Allmänna uppgifter"
 msgid "Privacy Policy"
 msgstr "Integritetspolicy"
 
-#: wp-admin/about.php:443
+#: wp-admin/about.php:461
 msgid "Install the Classic Editor"
 msgstr "Installera Classic Editor (den klassiska redigeraren)"
 
@@ -1311,7 +1307,7 @@ msgstr "https://codex.wordpress.org/Giving_WordPress_Its_Own_Directory"
 msgid "Enter the address here if you <a href=\"%s\">want your site home page to be different from your WordPress installation directory</a>."
 msgstr "Skriv in adressen här om du vill att <a href=\"%s\">startsidan för din webbplats ska ligga i en annan katalog än där WordPress är installerat</a>."
 
-#: wp-admin/about.php:381
+#: wp-admin/about.php:399
 msgid "Developer Happiness"
 msgstr "Lycka för utvecklare"
 
@@ -2733,7 +2729,7 @@ msgid "Welcome to %s. This is your first post. Edit or delete it, then start blo
 msgstr "Välkommen till %s. Det här är ditt första inlägg. Redigera eller radera det, sen kan du börja blogga."
 
 #. translators: %s: WordPress version number
-#: wp-admin/about.php:572
+#: wp-admin/about.php:590
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "<strong>Version %s</strong> åtgärdar en sårbarhet."
 
@@ -2750,15 +2746,15 @@ msgstr "https://sv.gravatar.com/"
 msgid "Profile Picture"
 msgstr "Profilbild"
 
-#: wp-admin/about.php:563
+#: wp-admin/about.php:581
 msgid "Maintenance Releases"
 msgstr "Underhållsrelease"
 
-#: wp-admin/about.php:566
+#: wp-admin/about.php:584
 msgid "Security Releases"
 msgstr "Säkerhetsrelease"
 
-#: wp-admin/about.php:64 wp-admin/about.php:569
+#: wp-admin/about.php:64 wp-admin/about.php:587
 msgid "Maintenance and Security Releases"
 msgstr "Underhålls- och säkerhetsrelease"
 
@@ -6529,19 +6525,19 @@ msgstr "Visa verktygsrad på framsidan"
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:581
+#: wp-admin/about.php:599
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>Version %1$s</strong> åtgärdar en säkerhetsrisk och %2$s bugg."
 msgstr[1] "<strong>Version %1$s</strong> åtgärdar en säkerhetsrisk och %2$s buggar."
 
 #. translators: %s: Codex URL
-#: wp-admin/about.php:72 wp-admin/about.php:589
+#: wp-admin/about.php:80 wp-admin/about.php:90 wp-admin/about.php:607
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "För mer information, se <a href=\"%s\">detaljer för releasen</a>."
 
 #. translators: 1: WordPress version number, 2: plural number of bugs.
-#: wp-admin/about.php:577
+#: wp-admin/about.php:69 wp-admin/about.php:595
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>Version %1$s</strong> åtgärdar %2$s bugg."
@@ -6549,7 +6545,7 @@ msgstr[1] "<strong>Version %1$s</strong> åtgärdar %2$s buggar."
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:585
+#: wp-admin/about.php:603
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>Version %1$s</strong> åtgärdar ett par sårbarheter och %2$s bugg."
@@ -6559,11 +6555,11 @@ msgstr[1] "<strong>Version %1$s</strong> åtgärdar ett par sårbarheter och %2$
 msgid "Welcome to your WordPress Dashboard! This is the screen you will see when you log in to your site, and gives you access to all the site management features of WordPress. You can get help for any screen by clicking the Help tab above the screen title."
 msgstr "Välkommen till din adminpanel för WordPress! Det här är sidan du kommer att se när du loggar in på din webbplats. Den ger dig tillgång till alla administrativa sidor för att hantera din webbplats. Du kan hitta hjälp för alla sidor i administrationen genom att klicka på fliken Hjälp uppe i hörnet."
 
-#: wp-admin/about.php:562
+#: wp-admin/about.php:580
 msgid "Maintenance Release"
 msgstr "Underhållsrelease"
 
-#: wp-admin/about.php:565
+#: wp-admin/about.php:583
 msgid "Security Release"
 msgstr "Säkerhetsrelease"
 
@@ -6571,12 +6567,12 @@ msgstr "Säkerhetsrelease"
 msgid "What&#8217;s New"
 msgstr "Vad är nytt"
 
-#: wp-admin/about.php:568
+#: wp-admin/about.php:586
 msgid "Maintenance and Security Release"
 msgstr "Underhålls och säkerhetsrelease"
 
 #. translators: %s: WordPress version number
-#: wp-admin/about.php:68 wp-admin/about.php:574
+#: wp-admin/about.php:86 wp-admin/about.php:592
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "<strong>Version %s</strong> åtgärdar sårbarheter."
 
@@ -6588,7 +6584,7 @@ msgstr "Den här sidan låter dig välja din permalänksstruktur, Du kan välja 
 msgid "Welcome to WordPress %1$s. <a href=\"%2$s\">Learn more</a>."
 msgstr "Välkommen till WordPress %1$s. <a href=\"%2$s\">Läs mer</a>."
 
-#: wp-admin/about.php:455
+#: wp-admin/about.php:473
 msgid "Return to Updates"
 msgstr "Återgå till uppdateringar"
 
@@ -6860,11 +6856,11 @@ msgstr "Eftersom detta är en Multisite-installation kan du lägga till konton s
 msgid "Welcome to WordPress %s"
 msgstr "Välkommen till WordPress %s"
 
-#: wp-admin/about.php:455
+#: wp-admin/about.php:473
 msgid "Return to Dashboard &rarr; Updates"
 msgstr "Återgå till Adminpanel &rarr; Uppdateringar"
 
-#: wp-admin/about.php:458
+#: wp-admin/about.php:476
 msgid "Go to Dashboard &rarr; Home"
 msgstr "Gå till Adminpanel &rarr; Hem"
 
@@ -8690,7 +8686,7 @@ msgid_plural "Drop-ins <span class=\"count\">(%s)</span>"
 msgstr[0] "Insticksprogram <span class=\"count\">(%s)</span>"
 msgstr[1] "Insticksprogram <span class=\"count\">(%s)</span>"
 
-#: wp-admin/about.php:458
+#: wp-admin/about.php:476
 msgid "Go to Dashboard"
 msgstr "Gå till adminpanelen"
 
@@ -9045,7 +9041,7 @@ msgstr "Stöd för multiwebbplatser är inte aktiverat."
 msgid "Visit"
 msgstr "Besök"
 
-#: wp-admin/about.php:292
+#: wp-admin/about.php:310
 msgid "More"
 msgstr "Mer"
 

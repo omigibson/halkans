@@ -49,5 +49,7 @@
  	</div><!-- #primary -->
 
  <?php
+ if (is_page( 'Electric Guitars' ) || is_page( 'Basses' ) || is_page( 'Acoustic Steel Stringed Guitars' ) || is_page( 'Amps & Speakers' )){
  get_sidebar();
+}
  get_footer();

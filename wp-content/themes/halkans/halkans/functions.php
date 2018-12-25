@@ -157,7 +157,7 @@ function filter_function(){
 			$args['tax_query'] = array(
 				'relation' => 'AND',
 				array(
-					'taxonomy' => 'brand',
+					'taxonomy' => $_POST['brand_type'],
 					'field' => 'id',
 					'terms' => $_POST['brand']
 				),
@@ -176,7 +176,7 @@ function filter_function(){
 			$args['tax_query'] = array(
 				'relation' => 'AND',
 				array(
-					'taxonomy' => 'brand',
+					'taxonomy' => $_POST['brand_type'],
 					'field' => 'id',
 					'terms' => $_POST['brand']
 				),
@@ -190,7 +190,7 @@ function filter_function(){
 			$args['tax_query'] = array(
 				'relation' => 'AND',
 				array(
-					'taxonomy' => 'brand',
+					'taxonomy' => $_POST['brand_type'],
 					'field' => 'id',
 					'terms' => $_POST['brand']
 				),
@@ -218,7 +218,7 @@ function filter_function(){
 				$args['tax_query'] = array(
 					'relation' => 'OR',
 					array(
-						'taxonomy' => 'brand',
+						'taxonomy' => $_POST['brand_type'],
 						'field' => 'id',
 						'terms' => $_POST['brand']
 					),

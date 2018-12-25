@@ -14,29 +14,26 @@
 		<div class="filter">
 			<h3>Brands</h3>
 			<?php
+				$brand = '';
+				if ($post_type === 'electricguitars' || $post_type === 'basses' ){
+					$brand = 'brand';
+				}
+				else if ($post_type === 'acoustic_steel'){
+					$brand = 'acoustic_steel_brand';
+				}
+				else if ($post_type === 'ampsspeakers'){
+					$brand = 'amp_brand';
+				}
 				//Brand filter
 				if( $terms = get_terms(array(
-		 			'taxonomy' => 'brand') ) ) :
+		 			'taxonomy' => $brand) ) ) :
 					foreach ( $terms as $key => $term ) :
+						$str2 = substr($term->name, 1);
 						echo '<div>
 										<input type="checkbox" name="brand[' . $key . ']" id="' . $term->term_id . '" value="' . $term->term_id . '">
-										<label for="' . $term->term_id . '">' . $term->name . '</label>
+										<label for="' . $term->term_id . '">' . $str2 . '</label>
 										<input type="hidden" name="post_type" value="' . $post_type . '">
-									</div>';
-					endforeach;
-				endif;
-			?>
-		</div>
-		<div class="filter">
-			<h3>Price</h3>
-			<?php
-				//Price filter
-				if( $terms = get_terms(array(
-					'taxonomy' => 'price_group') ) ) :
-					foreach ( $terms as $key => $term ) :
-						echo '<div>
-										<input type="checkbox" name="price[' . $key . ']" id="' . $term->term_id . '" value="' . $term->term_id . '">
-										<label for="' . $term->term_id . '">' . $term->name . '</label>
+										<input type="hidden" name="brand_type" value="' . $brand . '">
 									</div>';
 					endforeach;
 				endif;
@@ -51,6 +48,21 @@
 					foreach ( $terms as $key => $term ) :
 						echo '<div>
 										<input type="checkbox" name="year[' . $key . ']" id="' . $term->term_id . '" value="' . $term->term_id . '">
+										<label for="' . $term->term_id . '">' . $term->name . '</label>
+									</div>';
+					endforeach;
+				endif;
+			?>
+		</div>
+		<div class="filter">
+			<h3>Price</h3>
+			<?php
+				//Price filter
+				if( $terms = get_terms(array(
+					'taxonomy' => 'price_group') ) ) :
+					foreach ( $terms as $key => $term ) :
+						echo '<div>
+										<input type="checkbox" name="price[' . $key . ']" id="' . $term->term_id . '" value="' . $term->term_id . '">
 										<label for="' . $term->term_id . '">' . $term->name . '</label>
 									</div>';
 					endforeach;

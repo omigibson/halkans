@@ -33,10 +33,11 @@
 }
 
 .product-content {
+	//width: 80%;
 	background-color: white;
 	text-align: center;
 	padding: 1rem 1rem 0.5rem;
-	margin-bottom: 2.2rem;
+	margin: 0 auto 2.2rem;
 	border-radius: $border_radius;
 	box-shadow: 4px 4px 11px 5px rgba(168,168,168,0.75);
 	img {
@@ -46,4 +47,9 @@
 
 .product-header {
 	position: relative;
+}
+
+
+.intro-text {
+	margin: 1rem auto 3rem;
 }
