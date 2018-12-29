@@ -15,10 +15,6 @@
 	margin: 0 0 1.5em;
 }
 
-#content {
-	padding: $size__site-padding;
-}
-
 .header-image #content {
 	padding: 0;
 }
@@ -33,7 +29,7 @@
 }
 
 .product-content {
-	//width: 80%;
+	width: 700px;
 	background-color: white;
 	text-align: center;
 	padding: 1rem 1rem 0.5rem;

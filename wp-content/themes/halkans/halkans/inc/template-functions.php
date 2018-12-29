@@ -19,7 +19,7 @@ function halkans_body_classes( $classes ) {
 
 	//Remove sidebar
 	if ( is_front_page() || is_page( 'We buy' ) || is_page( 'Repairs' ) || is_page( 'Gallery' ) || is_page( 'Guitar Show' )
-	|| is_page( 'Acoustic Nylon Stringed Guitars' ) || is_page( 'Other instruments' ) || is_page( 'Hardware & pickups' ) || is_page( 'Necks & Bridges' )
+	|| is_page( 'Acoustic Nylon Stringed Guitars' ) || is_page( 'Other String Instruments' ) || is_page( 'Hardware & Pickups' ) || is_page( 'Necks & Bridges' )
 	|| is_page( 'Cases' ) || is_page( 'Stomp Boxes' ) || is_page( 'Cases' ) || is_page( 'Strings & Straps' ) || is_page( 'Replacement Speakers' )  ) {
 		$classes[] = 'no-sidebar';
 	}
