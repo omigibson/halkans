@@ -1,5 +1,7 @@
 html {
 	box-sizing: border-box;
+	background-color: #000000;
+;
 }
 
 *,
@@ -10,6 +12,10 @@ html {
 
 body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+	max-width: 1300px;
+	margin: 0 auto;
+	border: 1px solid #d3d3d3;
+	border-top: none;
 }
 
 hr {

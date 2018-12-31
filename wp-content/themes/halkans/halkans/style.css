@@ -499,6 +499,18 @@ p.logo {
   top: 0;
 }
 
+@media screen and (max-width: 768px) {
+  /* line 65, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/typography/_headings.scss */
+  h1.logo {
+    font-size: 3rem;
+  }
+  /* line 69, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/typography/_headings.scss */
+  .front-page-heading {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+}
+
 /* line 1, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/typography/_copy.scss */
 p {
   margin-bottom: 1rem;
@@ -567,9 +579,10 @@ a {
 /* line 1, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/elements/_elements.scss */
 html {
   box-sizing: border-box;
+  background-color: #000000;
 }
 
-/* line 5, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/elements/_elements.scss */
+/* line 7, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/elements/_elements.scss */
 *,
 *:before,
 *:after {
@@ -577,13 +590,17 @@ html {
   box-sizing: inherit;
 }
 
-/* line 11, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/elements/_elements.scss */
+/* line 13, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/elements/_elements.scss */
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
+  max-width: 1300px;
+  margin: 0 auto;
+  border: 1px solid #d3d3d3;
+  border-top: none;
 }
 
-/* line 15, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/elements/_elements.scss */
+/* line 21, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/elements/_elements.scss */
 hr {
   background-color: #ccc;
   border: 0;
@@ -623,7 +640,7 @@ dd {
   margin: 0 1.5em 1.5em;
 }
 
-/* line 24, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/elements/_elements.scss */
+/* line 30, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/elements/_elements.scss */
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -631,7 +648,7 @@ img {
   /* Adhere to container width. */
 }
 
-/* line 29, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/elements/_elements.scss */
+/* line 35, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/elements/_elements.scss */
 figure {
   margin: 0 0 1em 0;
   /* Extra wide images within figure tags don't overflow the content area. */
@@ -753,7 +770,6 @@ textarea {
 /* line 1, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
 .main-navigation {
   clear: both;
-  display: block;
   background-color: black;
   width: 100%;
   padding: 0.5rem 3rem;
@@ -761,20 +777,16 @@ textarea {
 
 /* line 8, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
 .main-navigation #primary-menu {
-  max-width: 1300px;
   padding-bottom: 8px;
-  margin: 0 auto;
 }
 
-/* line 14, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
+/* line 12, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
 .main-navigation #menu-undermeny {
-  max-width: 1300px;
   padding-top: 8px;
-  margin: 0 auto;
   border-top: 1px solid #d3d3d3;
 }
 
-/* line 21, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
+/* line 17, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
 .main-navigation ul {
   display: flex;
   justify-content: space-around;
@@ -783,7 +795,7 @@ textarea {
   padding-left: 0;
 }
 
-/* line 28, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
+/* line 24, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   position: absolute;
@@ -795,47 +807,86 @@ textarea {
   flex-direction: column;
 }
 
-/* line 38, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
+/* line 34, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
 
-/* line 44, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
+/* line 40, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
 .main-navigation ul ul li:hover > ul,
 .main-navigation ul ul li.focus > ul {
   left: 100%;
 }
 
-/* line 50, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
+/* line 46, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
 .main-navigation ul ul a {
   width: 200px;
   padding: 0 0.5rem;
   margin: 0.5rem;
 }
 
-/* line 65, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
+/* line 61, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
   left: auto;
 }
 
-/* line 71, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
+/* line 67, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
 .main-navigation li {
   position: relative;
 }
 
-/* line 79, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
+/* line 75, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
 .main-navigation a {
   display: block;
   text-decoration: none;
 }
 
-/* Small menu. */
-/* line 92, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
-.menu-toggle,
-.main-navigation.toggled ul {
+/* Small menu button */
+/* line 88, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
+.menu-toggle {
   display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 93, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
+  .menu-toggle {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+    background: black;
+    margin: 0 auto;
+    border: none;
+  }
+  /* line 103, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
+  .main-navigation ul {
+    display: none;
+  }
+  /* line 106, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
+  .main-navigation.toggled {
+    padding: 0.5rem 1rem;
+  }
+  /* line 108, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
+  .main-navigation.toggled a {
+    display: initial;
+  }
+  /* line 111, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
+  .main-navigation.toggled ul {
+    display: block;
+  }
+  /* line 115, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
+  .main-navigation.toggled ul li {
+    padding: 0 0.5rem;
+    margin: 0.5rem;
+  }
+  /* line 121, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_menus.scss */
+  .main-navigation.toggled ul li:hover ul, .main-navigation.toggled ul li.focus ul {
+    top: -15px;
+    left: 130px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -979,6 +1030,13 @@ header {
   margin: 3rem 0 2.5rem;
 }
 
+@media screen and (max-width: 768px) {
+  /* line 28, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_header.scss */
+  #masthead .logo-container {
+    margin: 1.5rem 0 1rem;
+  }
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -1044,6 +1102,14 @@ header {
   margin: 1rem auto 3rem;
 }
 
+@media screen and (max-width: 768px) {
+  /* line 54, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+  .text-content {
+    width: 80%;
+    margin: 2rem auto 3rem;
+  }
+}
+
 /*--------------------------------------------------------------
 ## Sidebar
 --------------------------------------------------------------*/
@@ -1054,7 +1120,7 @@ header {
   color: white;
   padding: 1rem;
   border-radius: 5px;
-  margin: 1.6rem auto 1rem;
+  margin: 2rem auto 1rem;
 }
 
 /* line 9, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_sidebar.scss */
@@ -1077,6 +1143,15 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 1rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 10, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_footer.scss */
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
 }
 
 /* line 1, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/layout/_sidebar-content.scss */

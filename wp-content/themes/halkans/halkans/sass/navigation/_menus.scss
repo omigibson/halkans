@@ -1,20 +1,16 @@
 .main-navigation {
 	clear: both;
-	display: block;
+	// display: block;
 	background-color: black;
 	width: 100%;
 	padding: 0.5rem 3rem;
 
 	#primary-menu {
-		max-width: 1300px;
 		padding-bottom: 8px;
-		margin: 0 auto;
 	}
 
 	#menu-undermeny {
-		max-width: 1300px;
 		padding-top: 8px;
-		margin: 0 auto;
 		border-top: 1px solid #d3d3d3;
 	}
 
@@ -88,22 +84,55 @@
 	}
 }
 
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
+/* Small menu button */
+.menu-toggle {
 	display: none;
 }
 
-// @media screen and (min-width: 37.5em) {
-// 	.menu-toggle {
-// 		display: none;
-// 	}
-// 	.main-navigation ul {
-// 		display: block;
-// 	}
-// }
-//
-// .comment-navigation,
+@media screen and (max-width: 768px) {
+	.menu-toggle {
+		display: block;
+		font-family: $font__heading;
+		font-weight: 700;
+		font-size: 1rem;
+		color: white;
+		background: black;
+		margin: 0 auto;
+		border: none;
+	}
+	.main-navigation ul {
+		display: none;
+		}
+	.main-navigation.toggled {
+		padding: 0.5rem 1rem;
+		a {
+			display: initial;
+		}
+		ul {
+			display: block;
+			// flex-direction: column;
+			// align-items: center;
+			li {
+				// width: 200px;
+				padding: 0 0.5rem;
+				margin: 0.5rem;
+						&:hover,
+						&.focus {
+							ul {
+								top: -15px;
+								left: 130px;
+								// background-color: $brand__red;
+								li {
+									@media (hover:none) {
+									}
+								}
+							}
+						}
+				}
+		}
+	}
+}
+
 // .posts-navigation,
 // .post-navigation {
 //
@@ -122,4 +151,4 @@
 // 		text-align: right;
 // 		width: 50%;
 // 	}
-// }
+//}
