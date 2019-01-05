@@ -31,7 +31,7 @@
 	}
 
 	button.onclick = function() {
-		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
+		if ( -1 !== container.className.indexOf( 'toggled' )  ) {
 			container.className = container.className.replace( ' toggled', '' );
 			button.setAttribute( 'aria-expanded', 'false' );
 			menu.setAttribute( 'aria-expanded', 'false' );
@@ -102,5 +102,38 @@
 				parentLink[i].addEventListener( 'touchstart', touchStartFn, false );
 			}
 		}
+
+		window.onclick = function(event) {
+  if (!event.target.matches('.sub-menu') || !event.target.matches('.sub-menu li') || !event.target.matches('.sub-menu li a') ) {
+    var item = document.getElementById("menu-item-586");
+      if (item.classList.contains('focus')) {
+        item.classList.remove('focus');
+      }
+    }
+  }
 	}( container ) );
+
+	// // Show and hide submenu on click in mobile mode
+// 	( function() {
+// 		var menuItems = document.querySelectorAll('.main-navigation li');
+// 		for ( i = 0; i < menuItems.length; ++i ){
+// 			if (menuItems[i].childNodes.length > 1){
+// 				menuItems[i].addEventListener('click', toggleSubMenu(menuItems[i].getElementsByTagName('ul')) )
+// 			}
+// 		}
+//
+//
+//
+// 	}
+// 	)();
+//
+//
 } )();
+//
+// function toggleSubMenu(subMenu) {
+// 	alert("Yo");
+// 	console.log(this);
+// 	console.log(subMenu);
+// 	subMenu.classList.toggle("show")
+// 	return false;
+// }
