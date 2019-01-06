@@ -74,19 +74,19 @@
 	}
 
 	/**
-	 * Toggles `focus` class to allow submenu access on tablets.
+	 * Toggles `focus` class to allow submenu access on tablets. Does not work in Chrome
 	 */
 	( function( container ) {
 		var touchStartFn, i,
 			parentLink = container.querySelectorAll( '.menu-item-has-children > a, .page_item_has_children > a' );
 
-      document.addEventListener("touchstart", touchToggle(event), false );
-
-	function touchToggle(e) {
+		if ( 'ontouchstart' in window || 'onmousedown' in window ) {
 			touchStartFn = function( e ) {
+        e.stopPropagation();
 				var menuItem = this.parentNode, i;
 
 				if ( ! menuItem.classList.contains( 'focus' ) ) {
+          e.stopPropagation();
 					e.preventDefault();
 					for ( i = 0; i < menuItem.parentNode.children.length; ++i ) {
 						if ( menuItem === menuItem.parentNode.children[i] ) {
@@ -105,12 +105,42 @@
 			}
 		}
 
+    //Solution for Chrome. Eventlistener with passive set to false
+//     document.addEventListener("touchstart", touchToggle(event), false );
+//
+// 	function touchToggle(e) {
+// 			touchStartFn = function( e ) {
+// 				var menuItem = this.parentNode, i;
+//
+// 				if ( ! menuItem.classList.contains( 'focus' ) ) {
+// 					e.preventDefault();
+// 					for ( i = 0; i < menuItem.parentNode.children.length; ++i ) {
+// 						if ( menuItem === menuItem.parentNode.children[i] ) {
+// 							continue;
+// 						}
+// 						menuItem.parentNode.children[i].classList.remove( 'focus' );
+// 					}
+// 					menuItem.classList.add( 'focus' );
+// 				} else {
+// 					menuItem.classList.remove( 'focus' );
+// 				}
+// 			};
+//
+// 			for ( i = 0; i < parentLink.length; ++i ) {
+// 				parentLink[i].addEventListener( 'touchstart', touchStartFn, false );
+// 			}
+// }
+
 		window.onclick = function(event) {
   if (!event.target.matches('.sub-menu') || !event.target.matches('.sub-menu li') || !event.target.matches('.sub-menu li a') ) {
-    var item = document.getElementById("menu-item-586");
-      if (item.classList.contains('focus')) {
-        item.classList.remove('focus');
+    var instruments = document.getElementById("menu-item-586");
+      if (instruments.classList.contains('focus')) {
+        instruments.classList.remove('focus');
       }
+      var accessories = document.getElementById("menu-item-559");
+        if (accessories.classList.contains('focus')) {
+          accessories.classList.remove('focus');
+        }
     }
   }
 	}( container ) );
