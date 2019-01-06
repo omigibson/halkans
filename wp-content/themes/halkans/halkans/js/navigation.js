@@ -80,7 +80,9 @@
 		var touchStartFn, i,
 			parentLink = container.querySelectorAll( '.menu-item-has-children > a, .page_item_has_children > a' );
 
-		if ( 'ontouchstart' in window ) {
+      document.addEventListener("touchstart", touchToggle(event), false );
+
+	function touchToggle(e) {
 			touchStartFn = function( e ) {
 				var menuItem = this.parentNode, i;
 
