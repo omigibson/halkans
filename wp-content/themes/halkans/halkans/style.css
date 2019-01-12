@@ -509,6 +509,17 @@ p.logo {
     font-size: 2.2rem;
     line-height: 1.2;
   }
+  /* line 74, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/typography/_headings.scss */
+  .price-heading {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* line 80, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/typography/_headings.scss */
+  h1.logo {
+    font-size: 2.5rem;
+  }
 }
 
 /* line 1, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/typography/_copy.scss */
@@ -657,39 +668,493 @@ figure {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-/* line 1, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/forms/_buttons.scss */
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 1;
-  padding: .6em 1em .4em;
+/* 
+
+	BUTTONS.CSS
+
+*/
+/* GLOBAL BUTTON CLASS */
+/* line 7, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.btn {
+  display: inline-block;
+  margin: .2em;
+  text-decoration: none;
 }
 
-/* line 14, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/forms/_buttons.scss */
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-  border-color: #ccc #bbb #aaa;
+/* line 13, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.btn:hover {
+  text-decoration: none;
 }
 
-/* line 18, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/forms/_buttons.scss */
-button:active, button:focus,
-input[type="button"]:active,
-input[type="button"]:focus,
-input[type="reset"]:active,
-input[type="reset"]:focus,
-input[type="submit"]:active,
-input[type="submit"]:focus {
-  border-color: #aaa #bbb #bbb;
+/* INDUSTRIAL */
+/* line 18, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+[class*=industrial] {
+  padding: 1em;
+  border: 2px solid;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  font-weight: 500;
+  transition: .5s background;
+  -webkit-transition: 0.5s background;
+}
+
+/* line 28, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.industrial-red {
+  color: #FF5749;
+  border-color: #ff5749;
+}
+
+/* line 33, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.industrial-blue {
+  color: #338FFB;
+  border-color: #338ffb;
+}
+
+/* line 38, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.industrial-green {
+  color: #11CD29;
+  border-color: #11cd29;
+}
+
+/* line 43, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.industrial-black {
+  color: #11100F;
+  border-color: #11100f;
+}
+
+/* line 48, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+[class*=industrial]:hover {
+  color: white;
+}
+
+/* line 52, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.industrial-red:hover {
+  background: #FF5749;
+  border-color: #ff5749;
+}
+
+/* line 57, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.industrial-blue:hover {
+  background: #338FFB;
+  border-color: #338ffb;
+}
+
+/* line 62, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.industrial-green:hover {
+  background: #11CD29;
+  border-color: #11cd29;
+}
+
+/* line 67, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.industrial-black:hover {
+  background: #11100F;
+  border-color: #11100f;
+}
+
+/* YOSEMITE */
+/* line 73, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+[class*=yosemite] {
+  padding: 1em 1.3em;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  color: #fff;
+  font-weight: 500;
+  transition: .5s all;
+  -webkit-transition: 0.5s all;
+}
+
+/* line 83, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.yosemite-red {
+  background: #FF5749;
+  border: 2px solid #b41814;
+}
+
+/* line 88, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.yosemite-yellow {
+  background: #EED15A;
+  border: 2px solid #bda02e;
+}
+
+/* line 93, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.yosemite-green {
+  background: #11CD29;
+  border: 2px solid #4d8b2a;
+}
+
+/* line 98, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.yosemite-gray {
+  background: #CECECE;
+  border: 2px solid #666;
+  color: #666666 !important;
+}
+
+/* line 104, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+[class*=yosemite]:hover {
+  background: #fff;
+  color: #666666 !important;
+}
+
+/* UPPERCASED */
+/* line 110, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+[class*=uppercased] {
+  padding: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  transition: .5s all;
+  -webkit-transition: 0.5s all;
+}
+
+/* line 120, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.uppercased-red {
+  background: #FF5749;
+  border: 2px solid #FF5749;
+  color: white;
+}
+
+/* line 126, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.uppercased-blue {
+  background: #338FFB;
+  border: 2px solid #338FFB;
+  color: white;
+}
+
+/* line 132, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.uppercased-green {
+  background: #11CD29;
+  border: 2px solid #11CD29;
+  color: white;
+}
+
+/* line 138, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.uppercased-black {
+  background: #11100F;
+  border: 2px solid #11100F;
+  color: white;
+}
+
+/* line 144, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+[class*=uppercased]:hover {
+  background: white;
+}
+
+/* line 148, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.uppercased-red:hover {
+  color: #FF5749;
+  border-color: #ff5749;
+}
+
+/* line 153, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.uppercased-blue:hover {
+  color: #338FFB;
+  border-color: #338ffb;
+}
+
+/* line 158, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.uppercased-green:hover {
+  color: #11CD29;
+  border-color: #11cd29;
+}
+
+/* line 163, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.uppercased-black:hover {
+  color: #11100F;
+  border-color: #11100f;
+}
+
+/* SHADOWED */
+/* line 169, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+[class*=shadowed] {
+  padding: 1em;
+  font-weight: 500;
+  transition: .5s all;
+  -webkit-transition: 0.5s all;
+}
+
+/* line 176, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.shadowed-red {
+  background: #FF5749;
+  border: 2px solid #FF5749;
+  color: white;
+}
+
+/* line 182, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.shadowed-blue {
+  background: #338FFB;
+  border: 2px solid #338FFB;
+  color: white;
+}
+
+/* line 188, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.shadowed-green {
+  background: #11CD29;
+  border: 2px solid #11CD29;
+  color: white;
+}
+
+/* line 194, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.shadowed-black {
+  background: #11100F;
+  border: 2px solid #11100F;
+  color: white;
+}
+
+/* line 200, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.shadowed-red:hover {
+  -webkit-box-shadow: 0 0 0 5px #FF5749;
+  box-shadow: 0 0 0 5px #ff5749;
+}
+
+/* line 205, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.shadowed-blue:hover {
+  -webkit-box-shadow: 0 0 0 5px #338FFB;
+  box-shadow: 0 0 0 5px #338ffb;
+}
+
+/* line 210, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.shadowed-green:hover {
+  -webkit-box-shadow: 0 0 0 5px #11CD29;
+  box-shadow: 0 0 0 5px #11cd29;
+}
+
+/* line 215, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.shadowed-black:hover {
+  -webkit-box-shadow: 0 0 0 5px #11100F;
+  box-shadow: 0 0 0 5px #11100f;
+}
+
+/* GRAYSCALE */
+/* line 221, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+[class*=grayscale] {
+  padding: 1em;
+  font-weight: 500;
+  transition: .5s all;
+  -webkit-transition: 0.5s all;
+}
+
+/* line 228, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.grayscale-gray-1 {
+  background: #999;
+  border: 2px solid #999;
+  color: white;
+}
+
+/* line 234, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.grayscale-gray-2 {
+  background: #4E4E4E;
+  border: 2px solid #4E4E4E;
+  color: white;
+}
+
+/* line 240, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.grayscale-gray-3 {
+  background: #282828;
+  border: 2px solid #282828;
+  color: white;
+}
+
+/* line 246, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.grayscale-black {
+  background: #000;
+  border: 2px solid #000;
+  color: white;
+}
+
+/* line 252, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+[class*=grayscale]:hover {
+  background: #fff;
+  color: #111111;
+}
+
+/* FANCY */
+/* line 258, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+[class*=fancy] {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 1.5em;
+  color: #fff;
+  text-shadow: 0 0 5px #11100F;
+  border: 2px solid #11100F;
+  font-weight: 500;
+  transition: .5s all;
+  -webkit-transition: 0.5s all;
+}
+
+/* line 270, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+[class*=fancy]:hover {
+  color: #11100f;
+}
+
+/* line 274, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.fancy-red {
+  background: -webkit-gradient(linear, left top, left bottom, from(#e98981), to(#ff5749));
+  background: -webkit-linear-gradient(#e98981, #ff5749);
+  background: linear-gradient(#e98981, #ff5749);
+}
+
+/* line 280, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.fancy-blue {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a8cffd), to(#338ffb));
+  background: -webkit-linear-gradient(#a8cffd, #338ffb);
+  background: linear-gradient(#a8cffd, #338ffb);
+}
+
+/* line 286, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.fancy-green {
+  background: -webkit-gradient(linear, left top, left bottom, from(#77e285), to(#11cd29));
+  background: -webkit-linear-gradient(#77e285, #11cd29);
+  background: linear-gradient(#77e285, #11cd29);
+}
+
+/* line 292, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.fancy-gray {
+  background: -webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#999999));
+  background: -webkit-linear-gradient(#cccccc, #999999);
+  background: linear-gradient(#cccccc, #999999);
+}
+
+/* SLEEK */
+/* line 299, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+[class*=sleek] {
+  padding: 1em;
+  font-weight: 500;
+  transition: .5s all;
+  -webkit-transition: .5s all;
+  background: #11100f;
+}
+
+/* line 307, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.sleek-red {
+  border-top: 2px solid #FF5749;
+  color: white;
+}
+
+/* line 312, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.sleek-red:hover {
+  background: #ff5749;
+}
+
+/* line 316, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.sleek-blue {
+  border-top: 2px solid #338FFB;
+  color: white;
+}
+
+/* line 321, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.sleek-blue:hover {
+  background: #338ffb;
+}
+
+/* line 325, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.sleek-green {
+  border-top: 2px solid #11CD29;
+  color: white;
+}
+
+/* line 330, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.sleek-green:hover {
+  background: #11cd29;
+}
+
+/* line 334, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.sleek-yellow {
+  border-top: 2px solid #EED15A;
+  color: white;
+}
+
+/* line 339, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.sleek-yellow:hover {
+  background: #eed15a;
+}
+
+/* LONG-SHADOW */
+/* line 344, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+[class*=long-shadow] {
+  padding: 1em;
+  font-weight: 500;
+  color: #fff;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+/* line 352, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+[class*=long-shadow]:hover {
+  -webkit-box-shadow: 0 1px 1px 0 #cccccc, 0 2px 2px 0 #cccccc, 0 3px 3px 0 #cccccc, 0 4px 4px 0 #cccccc, 0 5px 5px 0 #cccccc, 0 6px 6px 0 #cccccc, 0 7px 7px 0 #cccccc, 0 8px 8px 0 #cccccc, 0 9px 9px 0 #cccccc, 0 10px 10px 0 #cccccc, 0 11px 11px 0 #cccccc;
+  box-shadow: 0 1px 1px 0 #cccccc, 0 2px 2px 0 #cccccc, 0 3px 3px 0 #cccccc, 0 4px 4px 0 #cccccc, 0 5px 5px 0 #cccccc, 0 6px 6px 0 #cccccc, 0 7px 7px 0 #cccccc, 0 8px 8px 0 #cccccc, 0 9px 9px 0 #cccccc, 0 10px 10px 0 #cccccc, 0 11px 11px 0 #cccccc;
+}
+
+/* line 357, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.long-shadow-red {
+  background: #ff5749;
+}
+
+/* line 361, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.long-shadow-blue {
+  background: #338ffb;
+}
+
+/* line 365, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.long-shadow-green {
+  background: #11cd29;
+}
+
+/* line 369, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.long-shadow-black {
+  background: #11100f;
+}
+
+/* GLASS */
+/* line 374, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+[class*=glass] {
+  padding: 1em;
+  font-weight: 500;
+  color: #000;
+  border: 1px #000 solid;
+  -webkit-transition: .5s all;
+  transition: .5s all;
+}
+
+/* line 383, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.glass-red {
+  background: rgba(255, 87, 73, 0.75);
+}
+
+/* line 387, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.glass-red:hover {
+  background: #ff5749;
+}
+
+/* line 391, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.glass-blue {
+  background: rgba(51, 142, 251, 0.75);
+}
+
+/* line 395, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.glass-blue:hover {
+  background: #338ffb;
+}
+
+/* line 399, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.glass-green {
+  background: rgba(16, 205, 40, 0.75);
+}
+
+/* line 403, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.glass-green:hover {
+  background: #11cd29;
+}
+
+/* line 407, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.glass-black {
+  background: rgba(17, 16, 15, 0.75);
+  color: #fff !important;
+}
+
+/* line 412, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
+.glass-black:hover {
+  background: #11100F;
+  color: #fff !important;
 }
 
 /* line 1, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/forms/_fields.scss */
@@ -1042,6 +1507,20 @@ header {
   }
 }
 
+@media screen and (max-width: 768px) {
+  /* line 35, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_header.scss */
+  header {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* line 41, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_header.scss */
+  header {
+    margin-bottom: 0;
+  }
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -1083,7 +1562,7 @@ header {
 
 /* line 31, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
 .product-content {
-  width: 700px;
+  width: 85%;
   background-color: white;
   text-align: center;
   padding: 1rem 1rem 0.5rem;
@@ -1108,17 +1587,21 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 54, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+  /* line 60, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
   .text-content {
     width: 80%;
     margin: 2rem auto 3rem;
+  }
+  /* line 65, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+  .product-content {
+    width: 100%;
   }
 }
 
 /*--------------------------------------------------------------
 ## Sidebar
 --------------------------------------------------------------*/
-/* line 1, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_sidebar.scss */
+/* line 1, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_filters.scss */
 .filter {
   width: 90%;
   background-color: #323566;
@@ -1128,14 +1611,55 @@ header {
   margin: 2rem auto 1rem;
 }
 
-/* line 9, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_sidebar.scss */
+/* line 9, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_filters.scss */
 .filter div {
   margin-top: 0.3rem;
 }
 
-/* line 12, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_sidebar.scss */
+/* line 12, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_filters.scss */
 .filter div input {
   margin-right: 0.6rem;
+}
+
+/* line 18, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_filters.scss */
+#mobile-filter-button {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 24, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_filters.scss */
+  #mobile-filter-button {
+    display: block;
+    background-color: #323566;
+    font-family: "Playfair Display", serif;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 0 auto 1.5rem;
+    border-radius: 5px;
+    border: none;
+  }
+  /* line 35, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_filters.scss */
+  .mobile-hide {
+    display: none;
+  }
+  /* line 39, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_filters.scss */
+  aside {
+    background-color: #323566;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+  /* line 43, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_filters.scss */
+  aside .filter {
+    border: 1px solid #d3d3d3;
+    margin: 1rem auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* line 51, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_filters.scss */
+  #mobile-filter-button {
+    margin-bottom: 1rem;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1160,7 +1684,7 @@ footer {
 }
 
 /* line 1, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/layout/_sidebar-content.scss */
-#content {
+.site-content {
   max-width: 1300px;
   padding: 0 2rem 2rem;
   margin: 0 auto;
@@ -1193,6 +1717,41 @@ footer {
 /* line 32, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/layout/_sidebar-content.scss */
 .no-sidebar .site-main {
   margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 37, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/layout/_sidebar-content.scss */
+  .content-area {
+    clear: both;
+    margin: 0;
+    width: 100%;
+  }
+  /* line 43, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/layout/_sidebar-content.scss */
+  .site-content .widget-area {
+    width: 50%;
+  }
+  /* line 47, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/layout/_sidebar-content.scss */
+  .site-main {
+    margin: 0;
+  }
+  /* line 51, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/layout/_sidebar-content.scss */
+  .site-content {
+    position: relative;
+    padding: 0 1rem 1rem;
+  }
+  /* line 54, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/layout/_sidebar-content.scss */
+  .site-content .widget-area {
+    position: absolute;
+    top: 100px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* line 64, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/layout/_sidebar-content.scss */
+  .site-content .widget-area {
+    width: 60%;
+  }
 }
 
 /*--------------------------------------------------------------

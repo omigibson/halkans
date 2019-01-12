@@ -9,7 +9,7 @@
 
 	$post_type = get_query_var('pagename');
 ?>
-<aside id="secondary" class="widget-area">
+<aside id="secondary" class="widget-area mobile-hide">
 	<form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="filter">
 		<div class="filter">
 			<h3>Brands</h3>

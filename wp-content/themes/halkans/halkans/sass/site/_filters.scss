@@ -1,0 +1,54 @@
+.filter {
+  width: 90%;
+  background-color: $color__side-bar;
+  color: white;
+  padding: 1rem;
+  border-radius: $border_radius;
+  margin: 2rem auto 1rem;
+
+  div {
+    margin-top: 0.3rem;
+
+    input {
+      margin-right: 0.6rem;
+    }
+  }
+}
+
+#mobile-filter-button {
+  display:none;
+}
+
+@media screen and (max-width: 768px) {
+
+  #mobile-filter-button {
+    display:block;
+    background-color: $color__side-bar;
+    font-family: $font__heading;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 0 auto 1.5rem;
+    border-radius: $border_radius;
+    border: none;
+  }
+
+.mobile-hide {
+  display: none;
+}
+
+  aside {
+    background-color: $color__side-bar;
+    padding: 0.5rem;
+    border-radius: $border_radius;
+    .filter {
+      border: 1px solid $color__lightgray;
+      margin: 1rem auto;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #mobile-filter-button {
+    margin-bottom: 1rem;
+  }
+}

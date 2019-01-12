@@ -12,6 +12,7 @@
       <header class="page-header">
  				<h1><?php single_post_title(); ?></h1>
  			</header><!-- .page-header -->
+      <button id="mobile-filter-button">Filter</button>
       <div id="posts">
 
  		<?php if ( have_posts() ) :

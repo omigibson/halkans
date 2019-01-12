@@ -70,4 +70,14 @@ p.logo {
     font-size: 2.2rem;
     line-height: 1.2;
   }
+
+  .price-heading {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h1.logo {
+  	font-size: 2.5rem;
+  }
 }

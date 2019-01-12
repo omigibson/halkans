@@ -1,4 +1,4 @@
-#content {
+.site-content {
 	max-width: 1300px;
 	padding: $size__site-padding;
 	margin: 0 auto;
@@ -31,4 +31,37 @@
 // }
 .no-sidebar .site-main {
 	margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+	.content-area {
+		clear: both;
+		margin: 0;
+		width: $size__site-main;
+	}
+
+	.site-content .widget-area {
+		width: $size__tablet-sidebar;
+	}
+
+	.site-main {
+		margin: 0;
+	}
+
+	.site-content {
+		position: relative;
+		padding: $size__site-padding-mobile;
+		 	.widget-area {
+			position: absolute;
+			top: 100px;
+			overflow: hidden;
+			// width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.site-content .widget-area {
+		width: $size__mobile-sidebar;
+	}
 }
