@@ -141,6 +141,10 @@
         if (accessories.classList.contains('focus')) {
           accessories.classList.remove('focus');
         }
+      var sold = document.getElementById("menu-item-627");
+        if (sold.classList.contains('focus')) {
+          sold.classList.remove('focus');
+        }
     }
   }
 	}( container ) );

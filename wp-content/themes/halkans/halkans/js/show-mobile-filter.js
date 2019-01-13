@@ -13,4 +13,12 @@ showFilterButton.addEventListener('click', function(){
     showFilterButton.innerHTML = 'Filter';
   }
 })
+
+// document.addEventListener('click', function(event) {
+//   if (showFilterButton.innerHTML === 'Filter'){
+//     if (!event.target.matches('#filter') || !event.target.matches('.filter') || !event.target.matches('#filter .filter input') ){
+//       aside.classList.add('mobile-hide');
+//     }
+//   }
+// })
 } )();

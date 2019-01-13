@@ -12,7 +12,30 @@
       <header class="page-header">
  				<h1><?php single_post_title(); ?></h1>
  			</header><!-- .page-header -->
-      <button id="mobile-filter-button">Filter</button>
+
+      <?php
+   		while ( have_posts() ) :
+   			the_post();
+         ?>
+
+         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+         	<div class="entry-content">
+         		<?php
+         		the_content();
+         		?>
+         	</div><!-- .entry-content -->
+
+         </article><!-- #post-<?php the_ID(); ?> -->
+
+   <?php
+   		endwhile; // End of the loop.
+   		?>
+      
+      <?php if (is_page( 'Electric Guitars' ) || is_page( 'Basses' ) || is_page( 'Acoustic Steel Stringed Guitars' )
+      || is_page( 'Amps & Speakers' ) || is_page( 'Sold Guitars' ) || is_page( 'Sold Amps' )){
+        echo '<button id="mobile-filter-button">Filter</button>';
+      } ?>
       <div id="posts">
 
  		<?php if ( have_posts() ) :
@@ -50,7 +73,8 @@
  	</div><!-- #primary -->
 
  <?php
- if (is_page( 'Electric Guitars' ) || is_page( 'Basses' ) || is_page( 'Acoustic Steel Stringed Guitars' ) || is_page( 'Amps & Speakers' )){
+ if (is_page( 'Electric Guitars' ) || is_page( 'Basses' ) || is_page( 'Acoustic Steel Stringed Guitars' )
+ || is_page( 'Amps & Speakers' ) || is_page( 'Sold Guitars' ) || is_page( 'Sold Amps' )){
  get_sidebar();
 }
  get_footer();

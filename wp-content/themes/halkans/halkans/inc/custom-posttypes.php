@@ -708,4 +708,124 @@ add_action( 'init', 'replacement_speakers_post_type', 0 );
 
 }
 
+if ( ! function_exists('sold_guitars_post_type') ) {
+
+// Register Custom Post Type
+function sold_guitars_post_type() {
+
+	$labels = array(
+		'name'                  => _x( 'Sold Guitars', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Sold Guitars', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Sold Guitars', 'text_domain' ),
+		'name_admin_bar'        => __( 'Sold Guitars', 'text_domain' ),
+		'archives'              => __( 'Sold Guitars Archives', 'text_domain' ),
+		'attributes'            => __( 'Sold Guitars Attributes', 'text_domain' ),
+		'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),
+		'all_items'             => __( 'All Sold Guitars', 'text_domain' ),
+		'add_new_item'          => __( 'Add New Sold Guitar', 'text_domain' ),
+		'add_new'               => __( 'Add New', 'text_domain' ),
+		'new_item'              => __( 'New Sold Guitar', 'text_domain' ),
+		'edit_item'             => __( 'Edit Sold Guitar', 'text_domain' ),
+		'update_item'           => __( 'Update Sold Guitar', 'text_domain' ),
+		'view_item'             => __( 'View Sold Guitar', 'text_domain' ),
+		'view_items'            => __( 'View Sold Guitars', 'text_domain' ),
+		'search_items'          => __( 'Search Sold Guitar', 'text_domain' ),
+		'not_found'             => __( 'Not found', 'text_domain' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
+		'featured_image'        => __( 'Featured Image', 'text_domain' ),
+		'set_featured_image'    => __( 'Set featured image', 'text_domain' ),
+		'remove_featured_image' => __( 'Remove featured image', 'text_domain' ),
+		'use_featured_image'    => __( 'Use as featured image', 'text_domain' ),
+		'insert_into_item'      => __( 'Insert into Sold Guitar', 'text_domain' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this Sold Guitar', 'text_domain' ),
+		'items_list'            => __( 'Sold Guitars list', 'text_domain' ),
+		'items_list_navigation' => __( 'Sold Guitars list navigation', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter Sold Guitars list', 'text_domain' ),
+	);
+	$args = array(
+		'label'                 => __( 'Sold Guitars', 'text_domain' ),
+		'description'           => __( 'Post Type Description', 'text_domain' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor' ),
+		'taxonomies'            => array( 'sold_guitar_brand', 'age_group' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => false,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'sold-guitars', $args );
+
+}
+add_action( 'init', 'sold_guitars_post_type', 0 );
+
+}
+
+if ( ! function_exists('sold_amps_post_type') ) {
+
+// Register Custom Post Type
+function sold_amps_post_type() {
+
+	$labels = array(
+		'name'                  => _x( 'Sold Amps', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Sold Amps', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Sold Amps', 'text_domain' ),
+		'name_admin_bar'        => __( 'Sold Amps', 'text_domain' ),
+		'archives'              => __( 'Sold Amps Archives', 'text_domain' ),
+		'attributes'            => __( 'Sold Amp Attributes', 'text_domain' ),
+		'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),
+		'all_items'             => __( 'All Items', 'text_domain' ),
+		'add_new_item'          => __( 'Add New Sold Amp', 'text_domain' ),
+		'add_new'               => __( 'Add New', 'text_domain' ),
+		'new_item'              => __( 'New Sold Amp', 'text_domain' ),
+		'edit_item'             => __( 'Edit Sold Amp', 'text_domain' ),
+		'update_item'           => __( 'Update Sold Amp', 'text_domain' ),
+		'view_item'             => __( 'View Sold Amp', 'text_domain' ),
+		'view_items'            => __( 'View Sold Amps', 'text_domain' ),
+		'search_items'          => __( 'Search Sold Amp', 'text_domain' ),
+		'not_found'             => __( 'Not found', 'text_domain' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
+		'featured_image'        => __( 'Featured Image', 'text_domain' ),
+		'set_featured_image'    => __( 'Set featured image', 'text_domain' ),
+		'remove_featured_image' => __( 'Remove featured image', 'text_domain' ),
+		'use_featured_image'    => __( 'Use as featured image', 'text_domain' ),
+		'insert_into_item'      => __( 'Insert into Sold Amp', 'text_domain' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this Sold Amp', 'text_domain' ),
+		'items_list'            => __( 'Sold Amps list', 'text_domain' ),
+		'items_list_navigation' => __( 'Sold Amps list navigation', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter Sold Amps list', 'text_domain' ),
+	);
+	$args = array(
+		'label'                 => __( 'Sold Amps', 'text_domain' ),
+		'description'           => __( 'Post Type Description', 'text_domain' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor' ),
+		'taxonomies'            => array( 'amp_brand', 'age_group' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'sold-amps', $args );
+
+}
+add_action( 'init', 'sold_amps_post_type', 0 );
+
+}
+
 ?>

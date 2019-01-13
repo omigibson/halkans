@@ -21,8 +21,11 @@
 				else if ($post_type === 'acoustic_steel'){
 					$brand = 'acoustic_steel_brand';
 				}
-				else if ($post_type === 'ampsspeakers'){
+				else if ($post_type === 'ampsspeakers' || $post_type === 'sold-amps'){
 					$brand = 'amp_brand';
+				}
+				else if ($post_type === 'sold-guitars'){
+					$brand = 'sold_guitar_brand';
 				}
 				//Brand filter
 				if( $terms = get_terms(array(
@@ -54,6 +57,9 @@
 				endif;
 			?>
 		</div>
+		<?php
+			if(!$post_type === 'sold-guitars' || !$post_type === 'sold-amps' ){
+			?>
 		<div class="filter">
 			<h3>Price</h3>
 			<?php
@@ -67,6 +73,7 @@
 									</div>';
 					endforeach;
 				endif;
+			}
 			?>
 		</div>
 		<input type="hidden" name="action" value="myfilter">
