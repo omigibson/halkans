@@ -77,10 +77,26 @@
 		text-decoration: none;
 	}
 
+	.current_page_item,
+	.current-menu-item,
+	.current_page_ancestor,
+	.current-menu-ancestor {
+		background-color: $color__side-bar;
+
+	}
+
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
+		font-weight: 900;
+		font-style: italic;
+		outline: 0.5rem solid $color__side-bar;
+			&:hover,
+			&:focus,
+			&:active {
+				outline: 0.5rem solid $brand__red;
+		}
 	}
 }
 

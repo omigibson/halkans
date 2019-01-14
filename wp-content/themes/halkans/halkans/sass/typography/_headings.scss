@@ -61,6 +61,12 @@ p.logo {
   top: 0;
 }
 
+@media screen and (max-width: 992px) {
+  .price-heading {
+    position: relative;
+  }
+  }
+
 @media screen and (max-width: 768px) {
   h1.logo {
   	font-size: 3rem;
@@ -69,10 +75,6 @@ p.logo {
   .front-page-heading {
     font-size: 2.2rem;
     line-height: 1.2;
-  }
-
-  .price-heading {
-    position: relative;
   }
 }
 

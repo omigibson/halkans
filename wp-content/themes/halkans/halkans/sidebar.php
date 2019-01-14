@@ -24,8 +24,8 @@
 				else if ($post_type === 'ampsspeakers' || $post_type === 'sold-amps'){
 					$brand = 'amp_brand';
 				}
-				else if ($post_type === 'sold-guitars'){
-					$brand = 'sold_guitar_brand';
+				else if ($post_type === 'sold-instruments'){
+					$brand = 'sold_instrument_brand';
 				}
 				//Brand filter
 				if( $terms = get_terms(array(
@@ -58,7 +58,7 @@
 			?>
 		</div>
 		<?php
-			if(!$post_type === 'sold-guitars' || !$post_type === 'sold-amps' ){
+			if(!$post_type === 'sold-instruments' || !$post_type === 'sold-amps' ){
 			?>
 		<div class="filter">
 			<h3>Price</h3>

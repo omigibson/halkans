@@ -708,46 +708,46 @@ add_action( 'init', 'replacement_speakers_post_type', 0 );
 
 }
 
-if ( ! function_exists('sold_guitars_post_type') ) {
+if ( ! function_exists('sold_instruments_post_type') ) {
 
 // Register Custom Post Type
-function sold_guitars_post_type() {
+function sold_instruments_post_type() {
 
 	$labels = array(
-		'name'                  => _x( 'Sold Guitars', 'Post Type General Name', 'text_domain' ),
-		'singular_name'         => _x( 'Sold Guitars', 'Post Type Singular Name', 'text_domain' ),
-		'menu_name'             => __( 'Sold Guitars', 'text_domain' ),
-		'name_admin_bar'        => __( 'Sold Guitars', 'text_domain' ),
-		'archives'              => __( 'Sold Guitars Archives', 'text_domain' ),
-		'attributes'            => __( 'Sold Guitars Attributes', 'text_domain' ),
+		'name'                  => _x( 'Sold Instruments', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Sold Instruments', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Sold Instruments', 'text_domain' ),
+		'name_admin_bar'        => __( 'Sold Instruments', 'text_domain' ),
+		'archives'              => __( 'Sold Instruments Archives', 'text_domain' ),
+		'attributes'            => __( 'Sold Instruments Attributes', 'text_domain' ),
 		'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),
-		'all_items'             => __( 'All Sold Guitars', 'text_domain' ),
-		'add_new_item'          => __( 'Add New Sold Guitar', 'text_domain' ),
+		'all_items'             => __( 'All Sold Instruments', 'text_domain' ),
+		'add_new_item'          => __( 'Add New Sold Instruments', 'text_domain' ),
 		'add_new'               => __( 'Add New', 'text_domain' ),
-		'new_item'              => __( 'New Sold Guitar', 'text_domain' ),
-		'edit_item'             => __( 'Edit Sold Guitar', 'text_domain' ),
-		'update_item'           => __( 'Update Sold Guitar', 'text_domain' ),
-		'view_item'             => __( 'View Sold Guitar', 'text_domain' ),
-		'view_items'            => __( 'View Sold Guitars', 'text_domain' ),
-		'search_items'          => __( 'Search Sold Guitar', 'text_domain' ),
+		'new_item'              => __( 'New Sold Instrument', 'text_domain' ),
+		'edit_item'             => __( 'Edit Sold Instrument', 'text_domain' ),
+		'update_item'           => __( 'Update Sold Instrument', 'text_domain' ),
+		'view_item'             => __( 'View Sold Instrument', 'text_domain' ),
+		'view_items'            => __( 'View Sold Instrument', 'text_domain' ),
+		'search_items'          => __( 'Search Sold Instrument', 'text_domain' ),
 		'not_found'             => __( 'Not found', 'text_domain' ),
 		'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
 		'featured_image'        => __( 'Featured Image', 'text_domain' ),
 		'set_featured_image'    => __( 'Set featured image', 'text_domain' ),
 		'remove_featured_image' => __( 'Remove featured image', 'text_domain' ),
 		'use_featured_image'    => __( 'Use as featured image', 'text_domain' ),
-		'insert_into_item'      => __( 'Insert into Sold Guitar', 'text_domain' ),
-		'uploaded_to_this_item' => __( 'Uploaded to this Sold Guitar', 'text_domain' ),
-		'items_list'            => __( 'Sold Guitars list', 'text_domain' ),
-		'items_list_navigation' => __( 'Sold Guitars list navigation', 'text_domain' ),
-		'filter_items_list'     => __( 'Filter Sold Guitars list', 'text_domain' ),
+		'insert_into_item'      => __( 'Insert into Sold Instrument', 'text_domain' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this Sold Instrument', 'text_domain' ),
+		'items_list'            => __( 'Sold Instruments list', 'text_domain' ),
+		'items_list_navigation' => __( 'Sold Instruments list navigation', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter Sold Instruments list', 'text_domain' ),
 	);
 	$args = array(
-		'label'                 => __( 'Sold Guitars', 'text_domain' ),
+		'label'                 => __( 'Sold Instruments', 'text_domain' ),
 		'description'           => __( 'Post Type Description', 'text_domain' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor' ),
-		'taxonomies'            => array( 'sold_guitar_brand', 'age_group' ),
+		'taxonomies'            => array( 'sold_instrument_brand', 'age_group' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -761,10 +761,10 @@ function sold_guitars_post_type() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
-	register_post_type( 'sold-guitars', $args );
+	register_post_type( 'sold-instruments', $args );
 
 }
-add_action( 'init', 'sold_guitars_post_type', 0 );
+add_action( 'init', 'sold_instruments_post_type', 0 );
 
 }
 

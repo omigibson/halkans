@@ -166,7 +166,7 @@ add_action( 'init', 'amp_brand_taxonomy', 0 );
   		'show_in_nav_menus'          => false,
   		'show_tagcloud'              => false,
   	);
-  	register_taxonomy( 'price_group', array( 'electricguitars', 'basses', 'acoustic_steel', 'ampsspeakers', ), $args );
+  	register_taxonomy( 'price_group', array( 'electricguitars', 'basses', 'acoustic_steel', 'ampsspeakers' ), $args );
 
   }
   add_action( 'init', 'price_group_taxonomy', 0 );
@@ -220,21 +220,21 @@ add_action( 'init', 'amp_brand_taxonomy', 0 );
   if ( ! function_exists( 'sold_guitar_brands_taxonomy' ) ) {
 
 // Register Custom Taxonomy
-function sold_guitar_brands_taxonomy() {
+function sold_instrument_brand_taxonomy() {
 
 	$labels = array(
-		'name'                       => _x( 'Sold Guitar Brand', 'Taxonomy General Name', 'text_domain' ),
-		'singular_name'              => _x( 'Sold Guitar Brand', 'Taxonomy Singular Name', 'text_domain' ),
-		'menu_name'                  => __( 'Sold Guitar Brand', 'text_domain' ),
-		'all_items'                  => __( 'All Sold Guitar Brands', 'text_domain' ),
+		'name'                       => _x( 'Sold Instrument Brand', 'Taxonomy General Name', 'text_domain' ),
+		'singular_name'              => _x( 'Sold Instrument Brand', 'Taxonomy Singular Name', 'text_domain' ),
+		'menu_name'                  => __( 'Sold Instrument Brand', 'text_domain' ),
+		'all_items'                  => __( 'All Sold Instrument Brands', 'text_domain' ),
 		'parent_item'                => __( 'Parent Item', 'text_domain' ),
 		'parent_item_colon'          => __( 'Parent Item:', 'text_domain' ),
-		'new_item_name'              => __( 'New Sold Guitar Brand Name', 'text_domain' ),
-		'add_new_item'               => __( 'Add New Sold Guitar Brands', 'text_domain' ),
-		'edit_item'                  => __( 'Edit Sold Guitar Brands', 'text_domain' ),
-		'update_item'                => __( 'Update Sold Guitar Brand', 'text_domain' ),
-		'view_item'                  => __( 'View Sold Guitar Brand', 'text_domain' ),
-		'separate_items_with_commas' => __( 'Separate items with commas', 'text_domain' ),
+		'new_item_name'              => __( 'New Sold Instrument Brand Name', 'text_domain' ),
+		'add_new_item'               => __( 'Add New Sold Instrument Brands', 'text_domain' ),
+		'edit_item'                  => __( 'Edit Sold Instrument Brands', 'text_domain' ),
+		'update_item'                => __( 'Update Sold Instrument Brand', 'text_domain' ),
+		'view_item'                  => __( 'View Sold Instrument Brand', 'text_domain' ),
+		'separate_items_with_commas' => __( '', 'text_domain' ),
 		'add_or_remove_items'        => __( 'Add or remove items', 'text_domain' ),
 		'choose_from_most_used'      => __( 'Choose from the most used', 'text_domain' ),
 		'popular_items'              => __( 'Popular Items', 'text_domain' ),
@@ -253,9 +253,9 @@ function sold_guitar_brands_taxonomy() {
 		'show_in_nav_menus'          => false,
 		'show_tagcloud'              => false,
 	);
-	register_taxonomy( 'sold_guitar_brand', array( 'sold-guitars' ), $args );
+	register_taxonomy( 'sold_instrument_brand', array( 'sold-instruments' ), $args );
 
 }
-add_action( 'init', 'sold_guitar_brands_taxonomy', 0 );
+add_action( 'init', 'sold_instrument_brand_taxonomy', 0 );
 
 }

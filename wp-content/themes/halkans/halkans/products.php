@@ -31,9 +31,9 @@
    <?php
    		endwhile; // End of the loop.
    		?>
-      
+
       <?php if (is_page( 'Electric Guitars' ) || is_page( 'Basses' ) || is_page( 'Acoustic Steel Stringed Guitars' )
-      || is_page( 'Amps & Speakers' ) || is_page( 'Sold Guitars' ) || is_page( 'Sold Amps' )){
+      || is_page( 'Amps & Speakers' ) || is_page( 'Sold Instruments' ) || is_page( 'Sold Amps' )){
         echo '<button id="mobile-filter-button">Filter</button>';
       } ?>
       <div id="posts">
@@ -74,7 +74,7 @@
 
  <?php
  if (is_page( 'Electric Guitars' ) || is_page( 'Basses' ) || is_page( 'Acoustic Steel Stringed Guitars' )
- || is_page( 'Amps & Speakers' ) || is_page( 'Sold Guitars' ) || is_page( 'Sold Amps' )){
+ || is_page( 'Amps & Speakers' ) || is_page( 'Sold Instruments' ) || is_page( 'Sold Amps' )){
  get_sidebar();
 }
  get_footer();
