@@ -209,7 +209,7 @@ add_action( 'init', 'amp_brand_taxonomy', 0 );
   		'show_in_nav_menus'          => false,
   		'show_tagcloud'              => false,
   	);
-  	register_taxonomy( 'age_group', array( 'electricguitars', 'basses', 'acoustic_steel', 'acoustic_nylon', 'other_instruments',
+  	register_taxonomy( 'age_group', array( 'electricguitars', 'basses', 'acoustic_steel', 'other_instruments',
     'ampsspeakers', 'partsaccessories', 'sold-instruments', 'sold-amps' ), $args );
 
   }

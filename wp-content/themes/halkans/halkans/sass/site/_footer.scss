@@ -6,10 +6,24 @@ footer {
   padding: 1rem 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
+  footer {
+    flex-wrap: wrap;
+    p {
+      width: 50%;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
   footer {
     display: flex;
     flex-direction: column;
     padding: 1rem 2rem;
+    p {
+      width: auto;
+      text-align: left;
+    }
   }
 }

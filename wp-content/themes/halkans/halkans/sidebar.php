@@ -58,7 +58,10 @@
 			?>
 		</div>
 		<?php
-			if(!$post_type === 'sold-instruments' || !$post_type === 'sold-amps' ){
+			if($post_type === 'sold-instruments' || $post_type === 'sold-amps' ){
+				return;
+			}
+			else{
 			?>
 		<div class="filter">
 			<h3>Price</h3>

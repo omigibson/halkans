@@ -74,6 +74,10 @@
 	}
 }
 
+.no-sidebar .product-content {
+	width: 60%;
+ }
+
 // @media screen and (max-width: 992px) {
 // 	.product-content {
 // 		width: 70%;
@@ -85,10 +89,17 @@
 		width: 80%;
 		margin: 2rem auto 3rem;
 	}
+	.product-content {
+		margin: 0 auto 1.8rem;
+	}
 }
 
 @media screen and (max-width: 576px) {
 	.product-content {
 		width: 100%;
 	}
+
+	.no-sidebar .product-content {
+		width: 100%;
+	 }
 }

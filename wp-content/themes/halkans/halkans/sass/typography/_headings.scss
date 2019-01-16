@@ -21,7 +21,9 @@ h1 {
 	font-family: $font__logo;
 	font-size: 2.5rem;
   font-style: normal;
+  line-height: 1.2;
 	color: $brand__red;
+  margin-bottom: 1rem;
 }
 
 h1, h2 {
@@ -68,18 +70,39 @@ p.logo {
   }
 
 @media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
   h1.logo {
   	font-size: 3rem;
   }
 
+  p.logo {
+  	font-size: 1.6rem;
+  }
+
   .front-page-heading {
     font-size: 2.2rem;
-    line-height: 1.2;
+  }
+
+  p {
+    font-size: 15px;
   }
 }
 
 @media screen and (max-width: 576px) {
+  h1 {
+    font-size: 1.5rem;
+    margin: 1.2rem 0;
+  }
   h1.logo {
   	font-size: 2.5rem;
+  }
+  p.logo {
+  	font-size: 1.4rem;
+  }
+  .front-page-heading {
+    font-size: 2rem;
   }
 }
