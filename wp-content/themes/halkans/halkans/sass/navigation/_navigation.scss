@@ -1,6 +1,5 @@
 .main-navigation {
 	clear: both;
-	// display: block;
 	background-color: black;
 	width: 100%;
 	padding: 0.5rem 3rem;
@@ -175,7 +174,6 @@
 				}
 
 					li {
-						// @media (hover:none) {}
 						padding: 0;
 						&:hover,
 						&:focus,
@@ -188,24 +186,3 @@
 			}
 		}
 	}
-
-
-// .posts-navigation,
-// .post-navigation {
-//
-// 	.site-main & {
-// 		margin: 0 0 1.5em;
-// 		overflow: hidden;
-// 	}
-//
-// 	.nav-previous {
-// 		float: left;
-// 		width: 50%;
-// 	}
-//
-// 	.nav-next {
-// 		float: right;
-// 		text-align: right;
-// 		width: 50%;
-// 	}
-//}

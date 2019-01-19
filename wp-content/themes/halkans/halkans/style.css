@@ -695,551 +695,6 @@ figure {
 }
 
 /*--------------------------------------------------------------
-# Forms
---------------------------------------------------------------*/
-/* 
-
-	BUTTONS.CSS
-
-*/
-/* GLOBAL BUTTON CLASS */
-/* line 7, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.btn {
-  display: inline-block;
-  margin: .2em;
-  text-decoration: none;
-}
-
-/* line 13, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.btn:hover {
-  text-decoration: none;
-}
-
-/* INDUSTRIAL */
-/* line 18, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-[class*=industrial] {
-  padding: 1em;
-  border: 2px solid;
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  font-weight: 500;
-  transition: .5s background;
-  -webkit-transition: 0.5s background;
-}
-
-/* line 28, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.industrial-red {
-  color: #FF5749;
-  border-color: #ff5749;
-}
-
-/* line 33, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.industrial-blue {
-  color: #338FFB;
-  border-color: #338ffb;
-}
-
-/* line 38, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.industrial-green {
-  color: #11CD29;
-  border-color: #11cd29;
-}
-
-/* line 43, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.industrial-black {
-  color: #11100F;
-  border-color: #11100f;
-}
-
-/* line 48, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-[class*=industrial]:hover {
-  color: white;
-}
-
-/* line 52, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.industrial-red:hover {
-  background: #FF5749;
-  border-color: #ff5749;
-}
-
-/* line 57, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.industrial-blue:hover {
-  background: #338FFB;
-  border-color: #338ffb;
-}
-
-/* line 62, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.industrial-green:hover {
-  background: #11CD29;
-  border-color: #11cd29;
-}
-
-/* line 67, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.industrial-black:hover {
-  background: #11100F;
-  border-color: #11100f;
-}
-
-/* YOSEMITE */
-/* line 73, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-[class*=yosemite] {
-  padding: 1em 1.3em;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  color: #fff;
-  font-weight: 500;
-  transition: .5s all;
-  -webkit-transition: 0.5s all;
-}
-
-/* line 83, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.yosemite-red {
-  background: #FF5749;
-  border: 2px solid #b41814;
-}
-
-/* line 88, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.yosemite-yellow {
-  background: #EED15A;
-  border: 2px solid #bda02e;
-}
-
-/* line 93, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.yosemite-green {
-  background: #11CD29;
-  border: 2px solid #4d8b2a;
-}
-
-/* line 98, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.yosemite-gray {
-  background: #CECECE;
-  border: 2px solid #666;
-  color: #666666 !important;
-}
-
-/* line 104, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-[class*=yosemite]:hover {
-  background: #fff;
-  color: #666666 !important;
-}
-
-/* UPPERCASED */
-/* line 110, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-[class*=uppercased] {
-  padding: 1em;
-  font-weight: 500;
-  text-transform: uppercase;
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  transition: .5s all;
-  -webkit-transition: 0.5s all;
-}
-
-/* line 120, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.uppercased-red {
-  background: #FF5749;
-  border: 2px solid #FF5749;
-  color: white;
-}
-
-/* line 126, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.uppercased-blue {
-  background: #338FFB;
-  border: 2px solid #338FFB;
-  color: white;
-}
-
-/* line 132, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.uppercased-green {
-  background: #11CD29;
-  border: 2px solid #11CD29;
-  color: white;
-}
-
-/* line 138, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.uppercased-black {
-  background: #11100F;
-  border: 2px solid #11100F;
-  color: white;
-}
-
-/* line 144, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-[class*=uppercased]:hover {
-  background: white;
-}
-
-/* line 148, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.uppercased-red:hover {
-  color: #FF5749;
-  border-color: #ff5749;
-}
-
-/* line 153, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.uppercased-blue:hover {
-  color: #338FFB;
-  border-color: #338ffb;
-}
-
-/* line 158, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.uppercased-green:hover {
-  color: #11CD29;
-  border-color: #11cd29;
-}
-
-/* line 163, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.uppercased-black:hover {
-  color: #11100F;
-  border-color: #11100f;
-}
-
-/* SHADOWED */
-/* line 169, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-[class*=shadowed] {
-  padding: 1em;
-  font-weight: 500;
-  transition: .5s all;
-  -webkit-transition: 0.5s all;
-}
-
-/* line 176, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.shadowed-red {
-  background: #FF5749;
-  border: 2px solid #FF5749;
-  color: white;
-}
-
-/* line 182, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.shadowed-blue {
-  background: #338FFB;
-  border: 2px solid #338FFB;
-  color: white;
-}
-
-/* line 188, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.shadowed-green {
-  background: #11CD29;
-  border: 2px solid #11CD29;
-  color: white;
-}
-
-/* line 194, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.shadowed-black {
-  background: #11100F;
-  border: 2px solid #11100F;
-  color: white;
-}
-
-/* line 200, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.shadowed-red:hover {
-  -webkit-box-shadow: 0 0 0 5px #FF5749;
-  box-shadow: 0 0 0 5px #ff5749;
-}
-
-/* line 205, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.shadowed-blue:hover {
-  -webkit-box-shadow: 0 0 0 5px #338FFB;
-  box-shadow: 0 0 0 5px #338ffb;
-}
-
-/* line 210, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.shadowed-green:hover {
-  -webkit-box-shadow: 0 0 0 5px #11CD29;
-  box-shadow: 0 0 0 5px #11cd29;
-}
-
-/* line 215, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.shadowed-black:hover {
-  -webkit-box-shadow: 0 0 0 5px #11100F;
-  box-shadow: 0 0 0 5px #11100f;
-}
-
-/* GRAYSCALE */
-/* line 221, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-[class*=grayscale] {
-  padding: 1em;
-  font-weight: 500;
-  transition: .5s all;
-  -webkit-transition: 0.5s all;
-}
-
-/* line 228, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.grayscale-gray-1 {
-  background: #999;
-  border: 2px solid #999;
-  color: white;
-}
-
-/* line 234, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.grayscale-gray-2 {
-  background: #4E4E4E;
-  border: 2px solid #4E4E4E;
-  color: white;
-}
-
-/* line 240, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.grayscale-gray-3 {
-  background: #282828;
-  border: 2px solid #282828;
-  color: white;
-}
-
-/* line 246, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.grayscale-black {
-  background: #000;
-  border: 2px solid #000;
-  color: white;
-}
-
-/* line 252, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-[class*=grayscale]:hover {
-  background: #fff;
-  color: #111111;
-}
-
-/* FANCY */
-/* line 258, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-[class*=fancy] {
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  padding: 1.5em;
-  color: #fff;
-  text-shadow: 0 0 5px #11100F;
-  border: 2px solid #11100F;
-  font-weight: 500;
-  transition: .5s all;
-  -webkit-transition: 0.5s all;
-}
-
-/* line 270, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-[class*=fancy]:hover {
-  color: #11100f;
-}
-
-/* line 274, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.fancy-red {
-  background: -webkit-gradient(linear, left top, left bottom, from(#e98981), to(#ff5749));
-  background: -webkit-linear-gradient(#e98981, #ff5749);
-  background: linear-gradient(#e98981, #ff5749);
-}
-
-/* line 280, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.fancy-blue {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a8cffd), to(#338ffb));
-  background: -webkit-linear-gradient(#a8cffd, #338ffb);
-  background: linear-gradient(#a8cffd, #338ffb);
-}
-
-/* line 286, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.fancy-green {
-  background: -webkit-gradient(linear, left top, left bottom, from(#77e285), to(#11cd29));
-  background: -webkit-linear-gradient(#77e285, #11cd29);
-  background: linear-gradient(#77e285, #11cd29);
-}
-
-/* line 292, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.fancy-gray {
-  background: -webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#999999));
-  background: -webkit-linear-gradient(#cccccc, #999999);
-  background: linear-gradient(#cccccc, #999999);
-}
-
-/* SLEEK */
-/* line 299, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-[class*=sleek] {
-  padding: 1em;
-  font-weight: 500;
-  transition: .5s all;
-  -webkit-transition: .5s all;
-  background: #11100f;
-}
-
-/* line 307, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.sleek-red {
-  border-top: 2px solid #FF5749;
-  color: white;
-}
-
-/* line 312, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.sleek-red:hover {
-  background: #ff5749;
-}
-
-/* line 316, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.sleek-blue {
-  border-top: 2px solid #338FFB;
-  color: white;
-}
-
-/* line 321, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.sleek-blue:hover {
-  background: #338ffb;
-}
-
-/* line 325, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.sleek-green {
-  border-top: 2px solid #11CD29;
-  color: white;
-}
-
-/* line 330, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.sleek-green:hover {
-  background: #11cd29;
-}
-
-/* line 334, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.sleek-yellow {
-  border-top: 2px solid #EED15A;
-  color: white;
-}
-
-/* line 339, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.sleek-yellow:hover {
-  background: #eed15a;
-}
-
-/* LONG-SHADOW */
-/* line 344, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-[class*=long-shadow] {
-  padding: 1em;
-  font-weight: 500;
-  color: #fff;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-}
-
-/* line 352, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-[class*=long-shadow]:hover {
-  -webkit-box-shadow: 0 1px 1px 0 #cccccc, 0 2px 2px 0 #cccccc, 0 3px 3px 0 #cccccc, 0 4px 4px 0 #cccccc, 0 5px 5px 0 #cccccc, 0 6px 6px 0 #cccccc, 0 7px 7px 0 #cccccc, 0 8px 8px 0 #cccccc, 0 9px 9px 0 #cccccc, 0 10px 10px 0 #cccccc, 0 11px 11px 0 #cccccc;
-  box-shadow: 0 1px 1px 0 #cccccc, 0 2px 2px 0 #cccccc, 0 3px 3px 0 #cccccc, 0 4px 4px 0 #cccccc, 0 5px 5px 0 #cccccc, 0 6px 6px 0 #cccccc, 0 7px 7px 0 #cccccc, 0 8px 8px 0 #cccccc, 0 9px 9px 0 #cccccc, 0 10px 10px 0 #cccccc, 0 11px 11px 0 #cccccc;
-}
-
-/* line 357, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.long-shadow-red {
-  background: #ff5749;
-}
-
-/* line 361, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.long-shadow-blue {
-  background: #338ffb;
-}
-
-/* line 365, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.long-shadow-green {
-  background: #11cd29;
-}
-
-/* line 369, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.long-shadow-black {
-  background: #11100f;
-}
-
-/* GLASS */
-/* line 374, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-[class*=glass] {
-  padding: 1em;
-  font-weight: 500;
-  color: #000;
-  border: 1px #000 solid;
-  -webkit-transition: .5s all;
-  transition: .5s all;
-}
-
-/* line 383, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.glass-red {
-  background: rgba(255, 87, 73, 0.75);
-}
-
-/* line 387, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.glass-red:hover {
-  background: #ff5749;
-}
-
-/* line 391, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.glass-blue {
-  background: rgba(51, 142, 251, 0.75);
-}
-
-/* line 395, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.glass-blue:hover {
-  background: #338ffb;
-}
-
-/* line 399, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.glass-green {
-  background: rgba(16, 205, 40, 0.75);
-}
-
-/* line 403, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.glass-green:hover {
-  background: #11cd29;
-}
-
-/* line 407, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.glass-black {
-  background: rgba(17, 16, 15, 0.75);
-  color: #fff !important;
-}
-
-/* line 412, C:/Program Files (x86)/Scout-App/bower_components/buttons/buttons.css */
-.glass-black:hover {
-  background: #11100F;
-  color: #fff !important;
-}
-
-/* line 1, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/forms/_fields.scss */
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"],
-textarea {
-  color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  padding: 3px;
-}
-
-/* line 22, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/forms/_fields.scss */
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-input[type="number"]:focus,
-input[type="tel"]:focus,
-input[type="range"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="time"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="color"]:focus,
-textarea:focus {
-  color: #111;
-}
-
-/* line 27, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/forms/_fields.scss */
-select {
-  border: 1px solid #ccc;
-}
-
-/* line 31, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/forms/_fields.scss */
-textarea {
-  width: 100%;
-}
-
-/*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
 /* line 1, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
@@ -1250,23 +705,23 @@ textarea {
   padding: 0.5rem 3rem;
 }
 
-/* line 8, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+/* line 7, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
 .main-navigation #primary-menu {
   padding-bottom: 8px;
 }
 
-/* line 12, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+/* line 11, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
 .main-navigation #menu-undermeny {
   padding-top: 8px;
   border-top: 1px solid #d3d3d3;
 }
 
-/* line 17, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+/* line 16, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
 .main-navigation li {
   position: relative;
 }
 
-/* line 21, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+/* line 20, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
 .main-navigation a {
   display: block;
   text-decoration: none;
@@ -1275,13 +730,13 @@ textarea {
   color: #ffffff;
 }
 
-/* line 28, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+/* line 27, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
 .main-navigation a:hover, .main-navigation a:focus, .main-navigation a:active {
   background-color: #7D1C06;
   outline: 0.5rem solid #7D1C06;
 }
 
-/* line 36, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+/* line 35, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
 .main-navigation ul {
   display: flex;
   justify-content: space-around;
@@ -1290,7 +745,7 @@ textarea {
   padding-left: 0;
 }
 
-/* line 43, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+/* line 42, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   position: absolute;
@@ -1302,32 +757,32 @@ textarea {
   flex-direction: column;
 }
 
-/* line 53, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+/* line 52, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
 
-/* line 59, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+/* line 58, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
 .main-navigation ul ul li:hover > ul,
 .main-navigation ul ul li.focus > ul {
   left: 100%;
 }
 
-/* line 65, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+/* line 64, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
 .main-navigation ul ul a {
   width: 200px;
   padding: 0 0.5rem;
   margin: 0.5rem;
 }
 
-/* line 80, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+/* line 79, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
   left: auto;
 }
 
-/* line 86, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+/* line 85, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
 .main-navigation .current_page_item,
 .main-navigation .current-menu-item,
 .main-navigation .current_page_ancestor,
@@ -1335,7 +790,7 @@ textarea {
   background-color: #323566;
 }
 
-/* line 93, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+/* line 92, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
 .main-navigation .current_page_item > a,
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a,
@@ -1345,7 +800,7 @@ textarea {
   outline: 0.5rem solid #323566;
 }
 
-/* line 100, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+/* line 99, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
 .main-navigation .current_page_item > a:hover, .main-navigation .current_page_item > a:focus, .main-navigation .current_page_item > a:active,
 .main-navigation .current-menu-item > a:hover,
 .main-navigation .current-menu-item > a:focus,
@@ -1360,13 +815,13 @@ textarea {
 }
 
 /* Small menu button */
-/* line 109, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+/* line 108, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
 .menu-toggle {
   display: none;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 114, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+  /* line 113, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
   .menu-toggle {
     display: block;
     font-family: "Playfair Display", serif;
@@ -1377,30 +832,30 @@ textarea {
     margin: 0 auto;
     border: none;
   }
-  /* line 124, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+  /* line 123, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
   .main-navigation ul {
     display: none;
   }
-  /* line 127, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+  /* line 126, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
   .main-navigation.toggled {
     padding: 0.5rem;
   }
-  /* line 129, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+  /* line 128, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
   .main-navigation.toggled a {
     display: initial;
   }
-  /* line 132, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+  /* line 131, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
   .main-navigation.toggled ul {
     display: flex;
     flex-direction: column;
   }
-  /* line 135, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+  /* line 134, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
   .main-navigation.toggled ul li {
     align-self: flex-start;
     padding: 0 0.5rem;
     margin: 0.5rem;
   }
-  /* line 141, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+  /* line 140, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
   .main-navigation.toggled ul li.focus ul.sub-menu, .main-navigation.toggled ul li:hover ul.sub-menu {
     top: -5px;
     left: 97px;
@@ -1408,15 +863,15 @@ textarea {
     border-left: 2px solid #7D1C06;
     background-color: #222222;
   }
-  /* line 147, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+  /* line 146, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
   .main-navigation.toggled ul li.focus ul.sub-menu a, .main-navigation.toggled ul li:hover ul.sub-menu a {
     padding: 0;
   }
-  /* line 149, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+  /* line 148, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
   .main-navigation.toggled ul li.focus ul.sub-menu a:hover, .main-navigation.toggled ul li.focus ul.sub-menu a:focus, .main-navigation.toggled ul li.focus ul.sub-menu a:active, .main-navigation.toggled ul li:hover ul.sub-menu a:hover, .main-navigation.toggled ul li:hover ul.sub-menu a:focus, .main-navigation.toggled ul li:hover ul.sub-menu a:active {
     outline: 0.3rem solid #7D1C06;
   }
-  /* line 156, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+  /* line 155, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
   .main-navigation.toggled ul li.focus ul.sub-menu .current_page_item,
   .main-navigation.toggled ul li.focus ul.sub-menu .current-menu-item,
   .main-navigation.toggled ul li.focus ul.sub-menu .current_page_ancestor,
@@ -1426,7 +881,7 @@ textarea {
   .main-navigation.toggled ul li:hover ul.sub-menu .current-menu-ancestor {
     outline: 0.3rem solid #323566;
   }
-  /* line 164, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+  /* line 163, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
   .main-navigation.toggled ul li.focus ul.sub-menu .current_page_item:hover a, .main-navigation.toggled ul li.focus ul.sub-menu .current_page_item:focus a, .main-navigation.toggled ul li.focus ul.sub-menu .current_page_item:active a,
   .main-navigation.toggled ul li.focus ul.sub-menu .current-menu-item:hover a,
   .main-navigation.toggled ul li.focus ul.sub-menu .current-menu-item:focus a,
@@ -1448,7 +903,7 @@ textarea {
   .main-navigation.toggled ul li:hover ul.sub-menu .current-menu-ancestor:active a {
     outline: 0.3rem solid #7D1C06;
   }
-  /* line 170, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+  /* line 169, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
   .main-navigation.toggled ul li.focus ul.sub-menu .current_page_item > a,
   .main-navigation.toggled ul li.focus ul.sub-menu .current-menu-item > a,
   .main-navigation.toggled ul li.focus ul.sub-menu .current_page_ancestor > a,
@@ -1458,11 +913,11 @@ textarea {
   .main-navigation.toggled ul li:hover ul.sub-menu .current-menu-ancestor > a {
     outline: 0.3rem solid #323566;
   }
-  /* line 177, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+  /* line 176, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
   .main-navigation.toggled ul li.focus ul.sub-menu li, .main-navigation.toggled ul li:hover ul.sub-menu li {
     padding: 0;
   }
-  /* line 180, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
+  /* line 178, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/navigation/_navigation.scss */
   .main-navigation.toggled ul li.focus ul.sub-menu li:hover, .main-navigation.toggled ul li.focus ul.sub-menu li:focus, .main-navigation.toggled ul li.focus ul.sub-menu li:active, .main-navigation.toggled ul li:hover ul.sub-menu li:hover, .main-navigation.toggled ul li:hover ul.sub-menu li:focus, .main-navigation.toggled ul li:hover ul.sub-menu li:active {
     background-color: #7D1C06;
     outline: 0.3rem solid #7D1C06;
@@ -1645,23 +1100,46 @@ header {
 }
 
 /* line 9, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+.entry-content {
+  position: relative;
+}
+
+/* line 11, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+.entry-content .usps {
+  position: absolute;
+  left: 60%;
+  top: 10%;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* line 21, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+.entry-content .usps p {
+  margin: 0.3rem;
+}
+
+/* line 25, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
 .entry-content p {
   margin-top: 0;
   text-align: center;
 }
 
-/* line 14, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+/* line 31, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
 }
 
-/* line 19, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+/* line 36, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
 .header-image #content {
   padding: 0;
 }
 
-/* line 23, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+/* line 40, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
 .text-content {
   width: 60%;
   background-color: white;
@@ -1671,12 +1149,12 @@ header {
   box-shadow: 5px 5px 11px 5px rgba(168, 168, 168, 0.75);
 }
 
-/* line 30, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+/* line 47, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
 .text-content p {
   text-align: left;
 }
 
-/* line 35, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+/* line 52, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
 .product-content {
   width: 85%;
   background-color: white;
@@ -1687,22 +1165,22 @@ header {
   box-shadow: 4px 4px 11px 5px rgba(168, 168, 168, 0.75);
 }
 
-/* line 43, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+/* line 60, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
 .product-content img {
   margin: 0 0.5rem;
 }
 
-/* line 48, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+/* line 65, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
 .product-header {
   position: relative;
 }
 
-/* line 53, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+/* line 70, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
 .intro-text {
   margin: 1rem auto 3rem;
 }
 
-/* line 57, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+/* line 74, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
 .pagination {
   display: block;
   text-align: center;
@@ -1713,45 +1191,65 @@ header {
   margin-bottom: 2.2rem;
 }
 
-/* line 65, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+/* line 82, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
 .pagination .page-numbers {
   margin: 0 0.5rem;
 }
 
-/* line 67, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+/* line 84, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
 .pagination .page-numbers:visited {
   color: black;
 }
 
-/* line 71, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+/* line 88, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
 .pagination .current {
   font-size: 1.5rem;
   color: #7D1C06;
 }
 
-/* line 77, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+/* line 94, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
 .no-sidebar .product-content {
   width: 60%;
 }
 
+@media screen and (max-width: 992px) {
+  /* line 99, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+  .entry-content .usps {
+    left: 55%;
+  }
+}
+
 @media screen and (max-width: 768px) {
-  /* line 88, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+  /* line 105, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+  .entry-content .usps {
+    left: 50%;
+    top: 8%;
+  }
+  /* line 108, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+  .entry-content .usps p {
+    font-size: 14px;
+  }
+  /* line 112, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
   .text-content {
     width: 80%;
     margin: 2rem auto 3rem;
   }
-  /* line 92, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+  /* line 116, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
   .product-content {
     margin: 0 auto 1.8rem;
   }
 }
 
 @media screen and (max-width: 576px) {
-  /* line 98, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+  /* line 123, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+  .entry-content .usps {
+    display: none;
+  }
+  /* line 127, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
   .product-content {
     width: 100%;
   }
-  /* line 102, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+  /* line 131, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
   .no-sidebar .product-content {
     width: 100%;
   }
@@ -1781,12 +1279,17 @@ header {
 }
 
 /* line 18, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_filters.scss */
+div#pricediv {
+  display: none;
+}
+
+/* line 22, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_filters.scss */
 #mobile-filter-button {
   display: none;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 24, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_filters.scss */
+  /* line 28, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_filters.scss */
   #mobile-filter-button {
     display: block;
     background-color: #323566;
@@ -1797,17 +1300,17 @@ header {
     border-radius: 5px;
     border: none;
   }
-  /* line 35, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_filters.scss */
+  /* line 39, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_filters.scss */
   .mobile-hide {
     display: none;
   }
-  /* line 39, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_filters.scss */
+  /* line 43, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_filters.scss */
   aside {
     background-color: #323566;
     padding: 0.5rem;
     border-radius: 5px;
   }
-  /* line 43, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_filters.scss */
+  /* line 47, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_filters.scss */
   aside .filter {
     border: 1px solid #d3d3d3;
     margin: 1rem auto;
@@ -1815,7 +1318,7 @@ header {
 }
 
 @media screen and (max-width: 576px) {
-  /* line 51, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_filters.scss */
+  /* line 55, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_filters.scss */
   #mobile-filter-button {
     margin-bottom: 1rem;
   }
@@ -1890,32 +1393,32 @@ footer {
   width: 100%;
 }
 
-/* line 32, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/layout/_sidebar-content.scss */
+/* line 27, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/layout/_sidebar-content.scss */
 .no-sidebar .site-main {
   margin: 0;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 37, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/layout/_sidebar-content.scss */
+  /* line 32, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/layout/_sidebar-content.scss */
   .content-area {
     clear: both;
     margin: 0;
     width: 100%;
   }
-  /* line 43, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/layout/_sidebar-content.scss */
+  /* line 38, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/layout/_sidebar-content.scss */
   .site-content .widget-area {
     width: 50%;
   }
-  /* line 47, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/layout/_sidebar-content.scss */
+  /* line 42, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/layout/_sidebar-content.scss */
   .site-main {
     margin: 0;
   }
-  /* line 51, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/layout/_sidebar-content.scss */
+  /* line 46, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/layout/_sidebar-content.scss */
   .site-content {
     position: relative;
     padding: 0 1rem 1rem;
   }
-  /* line 54, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/layout/_sidebar-content.scss */
+  /* line 49, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/layout/_sidebar-content.scss */
   .site-content .widget-area {
     position: absolute;
     top: 100px;
@@ -1924,7 +1427,7 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
-  /* line 64, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/layout/_sidebar-content.scss */
+  /* line 58, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/layout/_sidebar-content.scss */
   .site-content .widget-area {
     width: 60%;
   }
@@ -2059,38 +1562,6 @@ object {
 /* line 19, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/media/_galleries.scss */
 .gallery-caption {
   display: block;
-}
-
-/* line 104, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/style.scss */
-.navigation li a,
-.navigation li a:hover,
-.navigation li.active a,
-.navigation li.disabled {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* line 112, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/style.scss */
-.navigation li {
-  display: inline;
-}
-
-/* line 116, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/style.scss */
-.navigation li a,
-.navigation li a:hover,
-.navigation li.active a,
-.navigation li.disabled {
-  background-color: #6FB7E9;
-  border-radius: 3px;
-  cursor: pointer;
-  padding: 12px;
-  padding: 0.75rem;
-}
-
-/* line 127, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/style.scss */
-.navigation li a:hover,
-.navigation li.active a {
-  background-color: #3C8DC5;
 }
 
 /*# sourceMappingURL=../style.map */

@@ -57,13 +57,7 @@
 				endif;
 			?>
 		</div>
-		<?php
-			if($post_type === 'sold-instruments' || $post_type === 'sold-amps' ){
-				return;
-			}
-			else{
-			?>
-		<div class="filter">
+		<div class="filter"  <?php if($post_type === 'sold-instruments' || $post_type === 'sold-amps' ){echo 'id="pricediv"';}?>>
 			<h3>Price</h3>
 			<?php
 				//Price filter
@@ -76,7 +70,6 @@
 									</div>';
 					endforeach;
 				endif;
-			}
 			?>
 		</div>
 		<input type="hidden" name="action" value="myfilter">

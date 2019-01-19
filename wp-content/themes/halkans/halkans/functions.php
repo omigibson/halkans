@@ -129,11 +129,54 @@ function halkans_scripts() {
 
 	wp_enqueue_script( 'halkans-show-mobile-filter', get_template_directory_uri() . '/js/show-mobile-filter.js', array(), '20151215', true );
 
-	// if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-	// 	wp_enqueue_script( 'comment-reply' );
-	// }
 }
+
+
+//Remove unnessecary menu items from admin menu
 add_action( 'wp_enqueue_scripts', 'halkans_scripts' );
+
+function custom_menu_page_removing() {
+    remove_menu_page( 'edit.php' );
+		remove_menu_page( 'edit-comments.php' );
+}
+add_action( 'admin_menu', 'custom_menu_page_removing' );
+
+/**
+ * Reorder admin menu
+ */
+
+function custom_menu_order( $menu_ord ) {
+    if ( ! $menu_ord ) { return true; }
+        return array(
+            'edit.php?post_type=page',
+						'upload.php',
+						'separator1',
+            'edit.php?post_type=electricguitars',
+						'edit.php?post_type=basses',
+						'edit.php?post_type=acoustic_steel',
+						'edit.php?post_type=acoustic_nylon',
+						'edit.php?post_type=other_instruments',
+						'edit.php?post_type=ampsspeakers',
+						'separator2',
+						'edit.php?post_type=hardwarepickups',
+						'edit.php?post_type=necksbridges',
+						'edit.php?post_type=cases',
+						'edit.php?post_type=stomp_boxes',
+						'edit.php?post_type=stringsstraps',
+						'edit.php?post_type=replacement_speakers',
+            'separator3',
+						'edit.php?post_type=sold-instruments',
+						'edit.php?post_type=sold-amps',
+            'themes.php',
+            'plugins.php',
+            'users.php',
+            'tools.php',
+            'options-general.php'
+        );
+    }
+
+add_filter( 'custom_menu_order', 'custom_menu_order' );
+add_filter( 'menu_order', 'custom_menu_order' );
 
 //Custom filter script
 function filter_script() {
@@ -255,7 +298,7 @@ function filter_function(){
 			endwhile;
 			wp_reset_postdata();
 		else :
-			echo 'No posts found';
+			echo 'No matches found';
 		endif;
 	die();
 }
