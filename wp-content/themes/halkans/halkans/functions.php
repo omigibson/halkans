@@ -164,9 +164,11 @@ function custom_menu_order( $menu_ord ) {
 						'edit.php?post_type=stomp_boxes',
 						'edit.php?post_type=stringsstraps',
 						'edit.php?post_type=replacement_speakers',
+						'edit.php?post_type=other_accessories',
             'separator3',
 						'edit.php?post_type=sold-instruments',
 						'edit.php?post_type=sold-amps',
+						'separator4',
             'themes.php',
             'plugins.php',
             'users.php',
@@ -198,7 +200,7 @@ function filter_function(){
 	);
 
 	//Check for different combinations of checked checkboxes
-		if( isset( $_POST['brand'] ) && isset( $_POST['price'] ) && isset( $_POST['year'] ) ):
+		if( isset( $_POST['brand'] ) && isset( $_POST['price'] ) && isset( $_POST['year']) && isset( $_POST['type'] )):
 			$args['tax_query'] = array(
 				'relation' => 'AND',
 				array(
@@ -215,6 +217,11 @@ function filter_function(){
 					'taxonomy' => 'age_group',
 					'field' => 'id',
 					'terms' => $_POST['year']
+				),
+				array(
+					'taxonomy' => 'instrument_type',
+					'field' => 'id',
+					'terms' => $_POST['type']
 				)
 			);
 		elseif ( isset( $_POST['brand'] ) && isset( $_POST['price'] ) ):
@@ -259,7 +266,35 @@ function filter_function(){
 					'terms' => $_POST['year']
 				)
 			);
-		elseif ( isset( $_POST['brand'] ) || isset( $_POST['price'] ) || isset( $_POST['year'] ) ):
+			elseif ( isset( $_POST['type'] ) && isset( $_POST['year'] ) ):
+				$args['tax_query'] = array(
+					'relation' => 'AND',
+					array(
+						'taxonomy' => 'instrument_type',
+						'field' => 'id',
+						'terms' => $_POST['type']
+					),
+					array(
+						'taxonomy' => 'age_group',
+						'field' => 'id',
+						'terms' => $_POST['year']
+					)
+				);
+				elseif ( isset( $_POST['brand'] ) && isset( $_POST['type'] ) ):
+					$args['tax_query'] = array(
+						'relation' => 'AND',
+						array(
+							'taxonomy' => $_POST['brand_type'],
+							'field' => 'id',
+							'terms' => $_POST['brand']
+						),
+						array(
+							'taxonomy' => 'instrument_type',
+							'field' => 'id',
+							'terms' => $_POST['type']
+						)
+					);
+		elseif ( isset( $_POST['brand'] ) || isset( $_POST['price'] ) || isset( $_POST['year']) || isset( $_POST['type'] ) ):
 				$args['tax_query'] = array(
 					'relation' => 'OR',
 					array(
@@ -276,6 +311,11 @@ function filter_function(){
 						'taxonomy' => 'age_group',
 						'field' => 'id',
 						'terms' => $_POST['year']
+					),
+					array(
+						'taxonomy' => 'instrument_type',
+						'field' => 'id',
+						'terms' => $_POST['type']
 					)
 				);
 		endif;

@@ -11,8 +11,23 @@
 ?>
 <aside id="secondary" class="widget-area mobile-hide">
 	<form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="filter">
+		<div class="filter"  <?php if(!$post_type === 'sold-instruments' ){echo 'id="typediv"';}?>>
+			<h3>Instrument</h3>
+			<?php
+				//Instrument type filter
+				if( $terms = get_terms(array(
+					'taxonomy' => 'instrument_type') ) ) :
+					foreach ( $terms as $key => $term ) :
+						echo '<div>
+										<input type="checkbox" name="type[' . $key . ']" id="' . $term->term_id . '" value="' . $term->term_id . '">
+										<label for="' . $term->term_id . '">' . $term->name . '</label>
+									</div>';
+					endforeach;
+				endif;
+			?>
+		</div>
 		<div class="filter">
-			<h3>Brands</h3>
+			<h3>Brand</h3>
 			<?php
 				$brand = '';
 				if ($post_type === 'electricguitars' || $post_type === 'basses' ){
@@ -43,7 +58,7 @@
 			?>
 		</div>
 		<div class="filter">
-			<h3>Year Made</h3>
+			<h3>Year</h3>
 			<?php
 				//Age filter
 				if( $terms = get_terms(array(

@@ -259,3 +259,46 @@ function sold_instrument_brand_taxonomy() {
 add_action( 'init', 'sold_instrument_brand_taxonomy', 0 );
 
 }
+
+if ( ! function_exists( 'instrument_type' ) ) {
+
+// Register Custom Taxonomy
+function instrument_type() {
+
+	$labels = array(
+		'name'                       => _x( 'Instrument Type', 'Taxonomy General Name', 'text_domain' ),
+		'singular_name'              => _x( 'Instrument Type', 'Taxonomy Singular Name', 'text_domain' ),
+		'menu_name'                  => __( 'Instrument Type', 'text_domain' ),
+		'all_items'                  => __( 'All Instrument Types', 'text_domain' ),
+		'parent_item'                => __( 'Parent Item', 'text_domain' ),
+		'parent_item_colon'          => __( 'Parent Item:', 'text_domain' ),
+		'new_item_name'              => __( 'New Instrument Type', 'text_domain' ),
+		'add_new_item'               => __( 'Add New Instrument Type', 'text_domain' ),
+		'edit_item'                  => __( 'Edit Instrument Type', 'text_domain' ),
+		'update_item'                => __( 'Update Instrument Type', 'text_domain' ),
+		'view_item'                  => __( 'View Instrument Type', 'text_domain' ),
+		'separate_items_with_commas' => __( '', 'text_domain' ),
+		'add_or_remove_items'        => __( 'Add or remove items', 'text_domain' ),
+		'choose_from_most_used'      => __( 'Choose from the most used', 'text_domain' ),
+		'popular_items'              => __( 'Popular Instrument Types', 'text_domain' ),
+		'search_items'               => __( 'Search Instrument Types', 'text_domain' ),
+		'not_found'                  => __( 'Not Found', 'text_domain' ),
+		'no_terms'                   => __( 'No items', 'text_domain' ),
+		'items_list'                 => __( 'Instrument Types list', 'text_domain' ),
+		'items_list_navigation'      => __( 'Instrument Types list navigation', 'text_domain' ),
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => false,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => false,
+		'show_tagcloud'              => false,
+	);
+	register_taxonomy( 'instrument_type', array( 'sold-instruments' ), $args );
+
+}
+add_action( 'init', 'instrument_type', 0 );
+
+}
