@@ -194,8 +194,8 @@ add_action( 'wp_enqueue_scripts', 'filter_script' );
 
 function filter_function(){
 	$args = array(
-		'orderby' => 'date', // we will sort posts by date
-		'order'	=> $_POST['date'], // ASC or DESC
+		'orderby' => 'title',
+		'order'	=> ASC,
 		'post_type' => $_POST['post_type'],
 	);
 
@@ -338,7 +338,7 @@ function filter_function(){
 			endwhile;
 			wp_reset_postdata();
 		else :
-			echo 'No matches found';
+			echo '<p class="nomatch">No matches found</p>';
 		endif;
 	die();
 }

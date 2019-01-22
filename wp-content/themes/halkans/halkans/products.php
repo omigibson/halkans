@@ -41,7 +41,9 @@
             $args = [
            'post_type'      => get_query_var('pagename'),
            'posts_per_page' => 10,
-           'paged' => $paged
+           'paged' => $paged,
+           'orderby' => 'title',
+       		 'order'	=> ASC
        		];
 
        		$loop = new WP_Query($args);

@@ -1218,44 +1218,49 @@ header {
   width: 60%;
 }
 
+/* line 97, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+.nomatch {
+  text-align: center;
+}
+
 @media screen and (max-width: 992px) {
-  /* line 98, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+  /* line 102, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
   .entry-content .usps {
     left: 55%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  /* line 104, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+  /* line 108, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
   .entry-content .usps {
     left: 50%;
     top: 8%;
   }
-  /* line 107, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+  /* line 111, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
   .entry-content .usps p {
     font-size: 14px;
   }
-  /* line 111, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+  /* line 115, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
   .text-content {
     width: 80%;
     margin: 2rem auto 3rem;
   }
-  /* line 115, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+  /* line 119, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
   .product-content {
     margin: 0 auto 1.8rem;
   }
 }
 
 @media screen and (max-width: 576px) {
-  /* line 122, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+  /* line 126, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
   .entry-content .usps {
     display: none;
   }
-  /* line 126, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+  /* line 130, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
   .product-content {
     width: 100%;
   }
-  /* line 130, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
+  /* line 134, C:/wamp64/www/halkans/wp-content/themes/halkans/halkans/sass/site/_posts-and-pages.scss */
   .no-sidebar .product-content {
     width: 100%;
   }
